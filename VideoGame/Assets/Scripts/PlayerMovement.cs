@@ -8,11 +8,17 @@ public class PlayerMovement : MonoBehaviour
     private float speed = 4f;
     private Rigidbody2D body;
     private Animator animator;
+    private SpriteRenderer spriteRenderer;
+    private bool grounded;
+
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -24,21 +30,38 @@ public class PlayerMovement : MonoBehaviour
         //flip player when moving
         if (horizontalInput > 0.01f)
         {
-            transform.localScale = Vector3.one;
+            spriteRenderer.flipX = false;
         }
         else if (horizontalInput < -0.01f)
         {
-            transform.localScale = new Vector3(-1, 1, 1);
+            spriteRenderer.flipX = true;
         }
 
         //jump
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W) && grounded)
         {
-            body.linearVelocity = new Vector2(body.linearVelocity.x, speed);
+            Jump();
         }
 
         //animator
         animator.SetBool("run", horizontalInput != 0);
+        animator.SetBool("grounded", grounded);
     }
 
+    private void Jump()
+    {
+        body.linearVelocity = new Vector2(body.linearVelocity.x, speed);
+        animator.SetTrigger("jump");
+        grounded = false;
+
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Ground")
+        {
+            grounded = true;
+        }
+
+    }
 }
