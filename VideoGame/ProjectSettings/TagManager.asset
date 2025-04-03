@@ -12,9 +12,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Ground
+  - Wall
+  - Player
   - 
   - 
   - 
@@ -48,8 +48,23 @@ TagManager:
   - name: Foreground
     uniqueID: 766724153
     locked: 0
+  - name: library1
+    uniqueID: 2931763447
+    locked: 0
+  - name: library2&3
+    uniqueID: 1547542773
+    locked: 0
+  - name: libraryGround
+    uniqueID: 663048371
+    locked: 0
+  - name: NPC
+    uniqueID: 3975653069
+    locked: 0
   - name: Player
     uniqueID: 3597861563
+    locked: 0
+  - name: Icon
+    uniqueID: 1427972883
     locked: 0
   m_RenderingLayers:
   - Default
