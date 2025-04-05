@@ -14,6 +14,7 @@ public class InteractionDetectorScript : MonoBehaviour
 
     public void OnInteract(InputAction.CallbackContext context)
     {
+        //essa parte ta diferente
         if (context.performed && interactableInRange != null)
         {
             interactableInRange.Interact();
@@ -24,7 +25,7 @@ public class InteractionDetectorScript : MonoBehaviour
         }
     }
 
-    private void OnTrigger2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.TryGetComponent(out IInteractable interactable) && interactable.CanInteract())
         {

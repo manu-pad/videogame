@@ -20,7 +20,6 @@ public class TabController : MonoBehaviour
 
     public void ActivateTab(int tabNo)
     {
-        Debug.Log("Botão clicado! Tab: " + tabNo);
 
         if (tabNo < 0 || tabNo >= pages.Length || tabNo >= tabButtons.Length)
         {

@@ -11,6 +11,8 @@ public class NPC : MonoBehaviour, IInteractable
     public GameObject dialoguePanel;
     public TMP_Text dialogueText, nameText;
     public Image portraitImage;
+    public InventoryController inventoryController; 
+
 
     private int dialogueIndex;
     private bool isTyping, isDialogueActive;
@@ -49,6 +51,11 @@ public class NPC : MonoBehaviour, IInteractable
 
         dialoguePanel.SetActive(true);
         //PauseController.SetPause(true);
+
+        if (inventoryController != null)
+        {
+            inventoryController.inventoryPanel.SetActive(false);
+        }
 
         StartCoroutine(TypeLine());
     }
@@ -98,5 +105,10 @@ public class NPC : MonoBehaviour, IInteractable
         dialogueText.SetText("");
         dialoguePanel.SetActive(false);
         //PauseController.SetPause(false);
+
+        if (inventoryController != null)
+        {
+            inventoryController.inventoryPanel.SetActive(true);
+        }
     }
 }

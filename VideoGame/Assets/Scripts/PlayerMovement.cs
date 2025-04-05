@@ -10,16 +10,18 @@ public class PlayerMovement : MonoBehaviour
     bool isFacingRight = true;
     private SpriteRenderer spriteRenderer;
     private Animator animator;
+    private bool playingFootsteps = false;
+    public float footstepSpeed = 0.5f; // tempo entre os passos
 
 
 
     [Header ("Movement")]
-    public float moveSpeed = 6f;
+    public float moveSpeed = 8f;
 
     float horizontalMovement;
 
     [Header ("Jumping")]
-    public float jumpPower = 7f;
+    public float jumpPower = 10f;
     public int maxJumps = 1; //apenas 1 pq acho que o 0 conta, por isso são 1 = 2 pulos
     int jumpsRemaining;
 
@@ -74,6 +76,27 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetBool("run", horizontalMovement != 0);
         animator.SetBool("grounded", isGrounded);
+        
+        //start footsteps
+        if(horizontalMovement != 0 && isGrounded && !isWallSliding && !isWallJumping && !PauseController.IsGamePaused)
+        {
+            if (!playingFootsteps)
+            {
+                StartFootsteps();
+            }
+        }
+        else
+        {
+            StopFootsteps();
+        }
+
+        if (PauseController.IsGamePaused)
+        {
+            rb.linearVelocity = Vector2.zero;
+            animator.SetBool("run", false);
+            StopFootsteps();
+            return;
+        }
 
     }
 
@@ -214,4 +237,24 @@ public class PlayerMovement : MonoBehaviour
         Gizmos.color = Color.blue;
         Gizmos.DrawWireCube(wallCheckPos.position, wallCheckSize);
     }
+    //tudo que tem a ver com áudio dos footsteps
+
+    void StartFootsteps()
+    {
+        playingFootsteps = true;
+        InvokeRepeating(nameof(PlayFootstep), 0f, footstepSpeed);
+        
+    }
+
+    void StopFootsteps()
+    {
+        playingFootsteps = false;
+        CancelInvoke(nameof(PlayFootstep));
+    }
+
+    void PlayFootstep()
+    {
+        SoundEffectManager.Play("Footstep");
+    }
+
 }
