@@ -16,9 +16,13 @@ MonoBehaviour:
   npcPortrait: {fileID: -7527145504033472756, guid: 097df7819a294864c86179830074b88f, type: 3}
   dialogueLines:
   - "Ol\xE1! Sou o Livro! Ajudarei voc\xEA em sua miss\xE3o!"
-  - "Para come\xE7ar, voc\xEA deve inspecionar as imagens! Tente!"
+  - "Para come\xE7armos, voc\xEA deve primeiro ler este livro, para entender como
+    se comportar aqui"
   autoProgressionLines: 0100
   autoProgressionDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 8300000, guid: 5d63276ff33ac0049a5dab69e3fa9e52, type: 3}
   voicePitch: 1
+  dialogueFlags:
+  - lineIndex: 2
+    variableName: dicasTutorial

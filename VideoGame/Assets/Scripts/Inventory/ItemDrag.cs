@@ -1,13 +1,11 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+//esse script fica nos objetos, que podem parar no inventário e serem arrastados de novo
 public class ItemDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     private Transform originalParent;
     private CanvasGroup canvasGroup;
-
-    public float minDropDistance = 2f;
-    public float maxDropDistance = 3f;
 
     public Collider2D tableArea; // Área da mesa
 
@@ -75,8 +73,17 @@ public class ItemDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
             }
 
         }
+        ResetSize();
+
         GetComponent<RectTransform>().anchoredPosition = Vector2.zero; // Reseta a posição
 
+    }
+
+    void ResetSize()
+    {
+        RectTransform rectTransform = GetComponent<RectTransform>();
+        rectTransform.localScale = Vector3.one; // Resetando a escala para 1
+        rectTransform.sizeDelta = new Vector2(100, 100);  // Ajuste o tamanho conforme necessário
     }
 
     //acho que não está muito bem!! precisa verificar

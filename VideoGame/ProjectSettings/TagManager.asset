@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - Item
   - WorldSlot
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -16,9 +17,9 @@ TagManager:
   - UI
   - Ground
   - Wall
+  - Furniture
   - Player
-  - 
-  - 
+  - Background
   - 
   - 
   - 
@@ -44,29 +45,23 @@ TagManager:
   - name: Background
     uniqueID: 2788125035
     locked: 0
-  - name: Default
-    uniqueID: 0
+  - name: MiddleGround
+    uniqueID: 1435956445
     locked: 0
-  - name: Foreground
-    uniqueID: 766724153
-    locked: 0
-  - name: library1
-    uniqueID: 2931763447
-    locked: 0
-  - name: library2&3
-    uniqueID: 1547542773
-    locked: 0
-  - name: libraryGround
-    uniqueID: 663048371
-    locked: 0
-  - name: NPC
-    uniqueID: 3975653069
+  - name: Furniture
+    uniqueID: 4172471319
     locked: 0
   - name: Player
     uniqueID: 3597861563
     locked: 0
   - name: Icon
     uniqueID: 1427972883
+    locked: 0
+  - name: Foreground
+    uniqueID: 766724153
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
   m_RenderingLayers:
   - Default

@@ -32,6 +32,7 @@ public class InteractionDetectorScript : MonoBehaviour
             interactableInRange = interactable;
             Debug.Log("Interativo detectado: " + interactable);
             interactionIcon.SetActive(true);
+            DicasController.Instance.SetDica("Pressione [E] para interagir!");
         }
         else
         {
@@ -46,7 +47,7 @@ public class InteractionDetectorScript : MonoBehaviour
             interactableInRange = null;
             interactionIcon.SetActive(false);
             Debug.Log("Objeto interativo saiu da área.");
-
+            DicasController.Instance.SetDica("");
         }
     }
 

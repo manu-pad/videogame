@@ -75,8 +75,28 @@ public class NPC : MonoBehaviour, IInteractable
         else
         {
             EndDialogue();
+
+            // Debugando o valor de dialogueIndex
+            Debug.Log("Fim do diálogo. Índice atual: " + dialogueIndex);
+
+            // Ativar variáveis com base nos flags de diálogo
+            foreach (var flag in dialogueData.dialogueFlags)
+            {
+                Debug.Log($"Verificando flag para a linha {flag.lineIndex} (Variável: {flag.variableName})");
+
+                // Verifique se o índice da linha corresponde ao índice do diálogo
+                if (flag.lineIndex == dialogueIndex)
+                {
+                    // Ativa a flag no DialogueFlagsManager
+                    DialogueFlagsManager.Instance.SetFlag(flag.variableName, true);
+                    bool flagValue = DialogueFlagsManager.Instance.GetFlag(flag.variableName);
+                    Debug.Log("Variável ativada: " + flag.variableName);
+                }
+            }
         }
     }
+
+
 
     IEnumerator TypeLine()
     {
