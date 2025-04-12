@@ -5,12 +5,13 @@ public class PlayerHealth : MonoBehaviour
     public int maxHealth = 3;
     private int currentHealth;
 
-    //public healthUI;
+
+    public HealthUI healthUI;
 
     void Start()
     {
        currentHealth = maxHealth;
-        //healthUI.setMaxHearts(MaxHealth);
+        healthUI.SetMaxHearts(maxHealth);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -18,7 +19,7 @@ public class PlayerHealth : MonoBehaviour
         if (collision.transform.CompareTag("Enemy"))
         {
             TakeDamage(1);
-            Debug.Log("Menos 1 de vida");
+            Debug.Log("Vidas restantes: " + currentHealth);
         }
     }
 
@@ -26,7 +27,7 @@ public class PlayerHealth : MonoBehaviour
     private void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        //healthUI.setHearts(currentHealth);
+        healthUI.UpdateHearts(currentHealth);
         if (currentHealth <= 0)
         {
             //player dead gameover animation

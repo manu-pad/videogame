@@ -2,21 +2,25 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public Transform player;              // refer�ncia ao jogador
+    public Transform player;              // referencia ao jogador
     public float speed = 2f;              // velocidade de movimento
-    public float detectionRange = 5f;     // dist�ncia para come�ar a perseguir
+    public float detectionRange = 5f;     // distancia para come�ar a perseguir
+    public int lifePoints = 2;
+
+    public bool shouldChase = true;
 
     private Rigidbody2D rb;
+    private int currentHits = 0;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.gravityScale = 0f;  // garante que a gravidade n�o afeta
+        rb.gravityScale = 0f;  // garante que a gravidade nao afeta
     }
 
     void FixedUpdate()
     {
-        if (player == null)
+        if (player == null || !shouldChase)
             return;
 
         float distance = Vector2.Distance(transform.position, player.position);
@@ -32,5 +36,16 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    
+    public void EnemyTakeDamage()
+    {
+        currentHits++;
+        Debug.Log($"Inimigo atingido! {currentHits}/{lifePoints} vezes.");
+
+        if (currentHits >= lifePoints)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+
 }

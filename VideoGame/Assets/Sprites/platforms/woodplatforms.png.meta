@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: 7b9acf07854e94041819207ceee5b4eb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1042400364514583085
+    second: woodplatforms_0
+  - first:
+      213: 6574260805586890818
+    second: woodplatforms_1
+  - first:
+      213: 368159794664056485
+    second: woodplatforms_2
+  - first:
+      213: -6682471846301050480
+    second: woodplatforms_3
+  - first:
+      213: 4881633267862707725
+    second: woodplatforms_4
+  - first:
+      213: 6459317994733005863
+    second: woodplatforms_5
+  - first:
+      213: 2934340707349963360
+    second: woodplatforms_6
+  - first:
+      213: -626640392664230416
+    second: woodplatforms_7
+  - first:
+      213: 606593351479879646
+    second: woodplatforms_8
+  - first:
+      213: -6582124896788719737
+    second: woodplatforms_9
+  - first:
+      213: 4570579129166117713
+    second: woodplatforms_10
+  - first:
+      213: 7488182957784751904
+    second: woodplatforms_11
+  - first:
+      213: 1264390661386906703
+    second: woodplatforms_12
+  - first:
+      213: -3882552012939413550
+    second: woodplatforms_13
+  - first:
+      213: -4838547151435564895
+    second: woodplatforms_14
+  - first:
+      213: -95894668094276940
+    second: woodplatforms_15
+  - first:
+      213: 6691193634383300388
+    second: woodplatforms_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: woodplatforms_0
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 796
+        width: 519
+        height: 155
+      alignment: 9
+      pivot: {x: 0.513028, y: 0.365996}
+      border: {x: 0, y: 0, z: 0, w: 3}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2221a0db99577e00800000000000000
+      internalID: 1042400364514583085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodplatforms_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 495
+        width: 226
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 240b7c9ee577c3b50800000000000000
+      internalID: 6574260805586890818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodplatforms_2
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 799
+        width: 163
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a62885f167fb1500800000000000000
+      internalID: 368159794664056485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodplatforms_3
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 797
+        width: 146
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0995da3d2471343a0800000000000000
+      internalID: -6682471846301050480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodplatforms_4
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 772
+        width: 136
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 7, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0e9fa6d79b0fb340800000000000000
+      internalID: 4881633267862707725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodplatforms_5
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 471
+        width: 83
+        height: 259
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72c69574e7b14a950800000000000000
+      internalID: 6459317994733005863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodplatforms_6
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 464
+        width: 129
+        height: 273
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0622097935fd8b820800000000000000
+      internalID: 2934340707349963360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodplatforms_7
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 783
+        width: 122
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f5565902e9bd47f0800000000000000
+      internalID: -626640392664230416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodplatforms_8
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 215
+        width: 269
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed76216707d0b6800800000000000000
+      internalID: 606593351479879646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodplatforms_9
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 214
+        width: 260
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78757aba74897a4a0800000000000000
+      internalID: -6582124896788719737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodplatforms_10
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 482
+        width: 709
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 26, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15bb2c38085fd6f30800000000000000
+      internalID: 4570579129166117713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodplatforms_11
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 181
+        width: 558
+        height: 249
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02fd4ebd9be5be760800000000000000
+      internalID: 7488182957784751904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodplatforms_12
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 156
+        width: 122
+        height: 277
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4ca9458b940c8110800000000000000
+      internalID: 1264390661386906703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodplatforms_13
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 69
+        width: 242
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d7b4cec3876e1ac0800000000000000
+      internalID: -3882552012939413550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodplatforms_14
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 76
+        width: 236
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a874b160070adcb0800000000000000
+      internalID: -4838547151435564895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodplatforms_15
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 71
+        width: 177
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4baf264be405baef0800000000000000
+      internalID: -95894668094276940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woodplatforms_16
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 184
+        width: 165
+        height: 241
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42785c4b825ebdc50800000000000000
+      internalID: 6691193634383300388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 8137e5bda03df3443becb38841649376
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      woodplatforms_0: 1042400364514583085
+      woodplatforms_1: 6574260805586890818
+      woodplatforms_10: 4570579129166117713
+      woodplatforms_11: 7488182957784751904
+      woodplatforms_12: 1264390661386906703
+      woodplatforms_13: -3882552012939413550
+      woodplatforms_14: -4838547151435564895
+      woodplatforms_15: -95894668094276940
+      woodplatforms_16: 6691193634383300388
+      woodplatforms_2: 368159794664056485
+      woodplatforms_3: -6682471846301050480
+      woodplatforms_4: 4881633267862707725
+      woodplatforms_5: 6459317994733005863
+      woodplatforms_6: 2934340707349963360
+      woodplatforms_7: -626640392664230416
+      woodplatforms_8: 606593351479879646
+      woodplatforms_9: -6582124896788719737
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

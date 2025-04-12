@@ -18,7 +18,13 @@ MonoBehaviour:
   - "Ol\xE1! Sou o Livro! Ajudarei voc\xEA em sua miss\xE3o!"
   - "Para come\xE7armos, voc\xEA deve primeiro ler este livro, para entender como
     se comportar aqui"
+  - "O que voc\xEA gostaria de saber?"
+  - "Voc\xEA est\xE1 na minha Biblioteca! A maior e melhor do pa\xEDs!"
+  - "Sou o Livro! Sou o respons\xE1vel por guardar todas as hist\xF3rias portuguesas"
+  - "Voc\xEA precisar\xE1 me ajudar a resolver uma s\xE9rie de problemas aqui na
+    biblioteca e dentro dos livros!"
   autoProgressionLines: 0100
+  endDialogueLines: 000000010101
   autoProgressionDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 8300000, guid: 5d63276ff33ac0049a5dab69e3fa9e52, type: 3}
@@ -26,3 +32,10 @@ MonoBehaviour:
   dialogueFlags:
   - lineIndex: 2
     variableName: dicasTutorial
+  choices:
+  - dialogueIndex: 2
+    choices:
+    - Onde estou?
+    - "O que \xE9 voc\xEA?"
+    - O que preciso fazer?
+    nextDialogueIndexes: 030000000400000005000000

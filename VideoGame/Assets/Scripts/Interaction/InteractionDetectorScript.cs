@@ -36,7 +36,7 @@ public class InteractionDetectorScript : MonoBehaviour
         }
         else
         {
-            Debug.Log("Nenhum objeto interativo detectado ou não pode interagir.");
+            //Debug.Log("Nenhum objeto interativo detectado ou não pode interagir.");
         }
     }
 
