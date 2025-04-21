@@ -4,6 +4,7 @@ using TMPro;
 
 public class WorldActionsController : MonoBehaviour
 {
+    public Transform gateOne;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,5 +24,14 @@ public class WorldActionsController : MonoBehaviour
             DicasController.Instance.SetDica("");
             DialogueFlagsManager.Instance.SetFlag("dicasTutorial", false);
         }
+
+
+        if (DialogueFlagsManager.Instance.GetFlag("finalDialogoUm"))
+        {
+            gateOne.position += new Vector3(0, 5f, 0); // sobe 5 unidades no eixo Y
+            DialogueFlagsManager.Instance.SetFlag("finalDialogoUm", false); // impede de subir de novo
+        }
+
     }
+   
 }

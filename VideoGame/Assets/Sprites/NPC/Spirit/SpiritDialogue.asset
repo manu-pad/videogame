@@ -32,6 +32,8 @@ MonoBehaviour:
   dialogueFlags:
   - lineIndex: 2
     variableName: dicasTutorial
+  - lineIndex: 3
+    variableName: finalDialogoUm
   choices:
   - dialogueIndex: 2
     choices:

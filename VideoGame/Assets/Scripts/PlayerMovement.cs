@@ -58,6 +58,7 @@ public class PlayerMovement : MonoBehaviour
     public float attackCooldown = 0.5f;
     private bool isAttacking = false;
 
+
     private float lastAttackTime = -Mathf.Infinity;
 
 
