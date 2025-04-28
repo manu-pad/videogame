@@ -19,6 +19,7 @@ public class NPC : MonoBehaviour, IInteractable
     void Start()
     {
         dialogueUI = DialogueManager.Instance;
+
     }
 
     public bool CanInteract()
@@ -71,12 +72,14 @@ public class NPC : MonoBehaviour, IInteractable
             StopAllCoroutines();
             dialogueUI.SetDialogueText(dialogueData.dialogueLines[dialogueIndex]);
             isTyping = false;
+            return;
         }
         //clearout choices
         dialogueUI.ClearChoices();
 
+
         //check endDIalogueline
-        if(dialogueData.endDialogueLines.Length > dialogueIndex && dialogueData.endDialogueLines[dialogueIndex])
+        if (dialogueData.endDialogueLines.Length > dialogueIndex && dialogueData.endDialogueLines[dialogueIndex])
         {
             EndDialogue();
             return;
@@ -92,6 +95,8 @@ public class NPC : MonoBehaviour, IInteractable
             }
         }
 
+        dialogueIndex++;
+
         if (++dialogueIndex < dialogueData.dialogueLines.Length)
         {
             DisplayCurrentLine();
@@ -99,28 +104,8 @@ public class NPC : MonoBehaviour, IInteractable
         else
         {
             EndDialogue();
-
-            // Debugando o valor de dialogueIndex
-            Debug.Log("Fim do diálogo. Índice atual: " + dialogueIndex);
-
-            // Ativar variáveis com base nos flags de diálogo
-            foreach (var flag in dialogueData.dialogueFlags)
-            {
-                Debug.Log($"Verificando flag para a linha {flag.lineIndex} (Variável: {flag.variableName})");
-
-                // Verifique se o índice da linha corresponde ao índice do diálogo
-                if (flag.lineIndex == dialogueIndex)
-                {
-                    // Ativa a flag no DialogueFlagsManager
-                    DialogueFlagsManager.Instance.SetFlag(flag.variableName, true);
-                    bool flagValue = DialogueFlagsManager.Instance.GetFlag(flag.variableName);
-                    Debug.Log("Variável ativada: " + flag.variableName);
-                }
-            }
         }
     }
-
-
 
     IEnumerator TypeLine()
     {
@@ -167,6 +152,7 @@ public class NPC : MonoBehaviour, IInteractable
 
     public void EndDialogue()
     {
+
         StopAllCoroutines();
         isDialogueActive = false;
         dialogueUI.SetDialogueText("");
@@ -176,6 +162,22 @@ public class NPC : MonoBehaviour, IInteractable
         if (inventoryController != null)
         {
             inventoryController.inventoryPanel.SetActive(true);
+        }
+
+
+        //vai buscar as flags do NPCDialogue que passam no VariableManager
+        if (dialogueData == null)
+        {
+            Debug.LogError("dialogueData está NULL!");
+        }
+        else if (VariableManager.Instance == null)
+        {
+            Debug.LogError("VariableManager.Instance está NULL!");
+        }
+        else if (dialogueData.setEndDialogueFlag && !string.IsNullOrEmpty(dialogueData.variableNameToSet))
+        {
+            VariableManager.Instance.SetVariable(dialogueData.variableNameToSet, true);
+            Debug.Log($"Variável '{dialogueData.variableNameToSet}' foi ativada.");
         }
     }
 }

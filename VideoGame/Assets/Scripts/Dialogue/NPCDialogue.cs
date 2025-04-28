@@ -13,16 +13,11 @@ public class NPCDialogue : ScriptableObject
     public float typingSpeed = 0.05f;
     public AudioClip voiceSound;
     public float voicePitch = 1f;
+    //flags
+    public bool setEndDialogueFlag;
+    public string variableNameToSet;
 
-    public DialogueFlag[] dialogueFlags;
     public DialogueChoice[] choices; //choices for the player
-}
-
-[System.Serializable]
-public struct DialogueFlag
-{
-    public int lineIndex;
-    public string variableName;
 }
 
 [System.Serializable]

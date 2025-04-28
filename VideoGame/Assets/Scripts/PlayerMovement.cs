@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header ("Jumping")]
     public float jumpPower = 10f;
-    public int maxJumps = 1; //apenas 1 pq acho que o 0 conta, por isso são 1 = 2 pulos
+    public int maxJumps = 1; //apenas 1 pq acho que o 0 conta, por isso sï¿½o 1 = 2 pulos
     int jumpsRemaining;
 
     [Header("GroundCheck")]
@@ -57,7 +57,6 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 attackPos;
     public float attackCooldown = 0.5f;
     private bool isAttacking = false;
-
 
     private float lastAttackTime = -Mathf.Infinity;
 
@@ -106,7 +105,7 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        // Define a posição do ataque baseado na direção que o player está virado
+        // Define a posiï¿½ï¿½o do ataque baseado na direï¿½ï¿½o que o player estï¿½ virado
         attackPos = (Vector2)transform.position + (isFacingRight ? Vector2.right : Vector2.left) * attackRange;
 
     }
@@ -155,7 +154,7 @@ public class PlayerMovement : MonoBehaviour
             animator.SetTrigger("jump");
 
 
-            //lógica para fazer o personagem virar-se
+            //lï¿½gica para fazer o personagem virar-se
             isFacingRight = wallJumpDirection > 0;
             spriteRenderer.flipX = !isFacingRight;
 
@@ -198,7 +197,7 @@ public class PlayerMovement : MonoBehaviour
         {
             isFacingRight = true;
         }
-        spriteRenderer.flipX = !isFacingRight; // Inverte o sprite baseado na direção
+        spriteRenderer.flipX = !isFacingRight; // Inverte o sprite baseado na direï¿½ï¿½o
 
         Vector3 wallCheckLocalPos = wallCheckPos.localPosition;
         wallCheckLocalPos.x = Mathf.Abs(wallCheckLocalPos.x) * (isFacingRight ? 1 : -1);
@@ -259,7 +258,7 @@ public class PlayerMovement : MonoBehaviour
             }
 
 
-            // Se quiser um efeito visual/som, pode chamar aqui também
+            // Se quiser um efeito visual/som, pode chamar aqui tambï¿½m
         }
     }
 
@@ -276,7 +275,7 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    //tudo que tem a ver com áudio dos footsteps
+    //tudo que tem a ver com ï¿½udio dos footsteps
     void StartFootsteps()
     {
         playingFootsteps = true;

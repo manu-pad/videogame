@@ -29,11 +29,8 @@ MonoBehaviour:
   typingSpeed: 0.05
   voiceSound: {fileID: 8300000, guid: 5d63276ff33ac0049a5dab69e3fa9e52, type: 3}
   voicePitch: 1
-  dialogueFlags:
-  - lineIndex: 2
-    variableName: dicasTutorial
-  - lineIndex: 3
-    variableName: finalDialogoUm
+  setEndDialogueFlag: 1
+  variableNameToSet: openGateOne
   choices:
   - dialogueIndex: 2
     choices:

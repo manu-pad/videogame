@@ -26,21 +26,4 @@ public class MovingPlatform : MonoBehaviour
         }
     }
 
-    //não funciona
-
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    if (collision.gameObject.CompareTag("Player"))
-    //    {
-    //        collision.transform.SetParent(transform, true); // mantém posição mundial
-    //    }
-    //}
-    //
-    //private void OnCollisionExit2D(Collision2D collision)
-    //{
-    //    if (collision.gameObject.CompareTag("Player"))
-    //    {
-    //        collision.gameObject.transform.parent = null;
-    //    }
-    //}
 }
