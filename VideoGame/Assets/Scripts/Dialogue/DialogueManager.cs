@@ -35,6 +35,10 @@ public class DialogueManager : MonoBehaviour
     {
         nameText.SetText(npcName); //ela pos .text mas acho que ta desatualizado
         portraitImage.sprite = npcPortrait;
+        if (npcPortrait == null)
+        {
+            portraitImage.gameObject.SetActive(false); 
+        }
     }
 
     public void SetDialogueText(string text)

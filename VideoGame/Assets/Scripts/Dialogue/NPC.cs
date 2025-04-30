@@ -147,8 +147,23 @@ public class NPC : MonoBehaviour, IInteractable
     void DisplayCurrentLine()
     {
         StopAllCoroutines();
+
+        // Verifica se esta linha tem alguma flag associada
+        if (dialogueData.lineFlags != null)
+        {
+            foreach (var flag in dialogueData.lineFlags)
+            {
+                if (flag.dialogueLineIndex == dialogueIndex && !string.IsNullOrEmpty(flag.variableName))
+                {
+                    VariableManager.Instance.SetVariable(flag.variableName, flag.value);
+                    Debug.Log($"Flag '{flag.variableName}' ativada na linha {dialogueIndex}.");
+                }
+            }
+        }
+
         StartCoroutine(TypeLine());
     }
+
 
     public void EndDialogue()
     {
@@ -159,25 +174,26 @@ public class NPC : MonoBehaviour, IInteractable
         dialogueUI.ShowDialogueUI(false);
         //PauseController.SetPause(false);
 
-        if (inventoryController != null)
-        {
-            inventoryController.inventoryPanel.SetActive(true);
-        }
+        //AQUI PARA REATIVAR O INVENTARIO -- TIREI JÁ QUE NÃO VOU USAR AGORA
+        //if (inventoryController != null)
+        //{
+        //    inventoryController.inventoryPanel.SetActive(true);
+        //}
 
 
-        //vai buscar as flags do NPCDialogue que passam no VariableManager
-        if (dialogueData == null)
-        {
-            Debug.LogError("dialogueData está NULL!");
-        }
-        else if (VariableManager.Instance == null)
-        {
-            Debug.LogError("VariableManager.Instance está NULL!");
-        }
-        else if (dialogueData.setEndDialogueFlag && !string.IsNullOrEmpty(dialogueData.variableNameToSet))
-        {
-            VariableManager.Instance.SetVariable(dialogueData.variableNameToSet, true);
-            Debug.Log($"Variável '{dialogueData.variableNameToSet}' foi ativada.");
-        }
+        ////vai buscar as flags do NPCDialogue que passam no VariableManager
+        //if (dialogueData == null)
+        //{
+        //    Debug.LogError("dialogueData está NULL!");
+        //}
+        //else if (VariableManager.Instance == null)
+        //{
+        //    Debug.LogError("VariableManager.Instance está NULL!");
+        //}
+        //else if (dialogueData.setEndDialogueFlag && !string.IsNullOrEmpty(dialogueData.variableNameToSet))
+        //{
+        //    VariableManager.Instance.SetVariable(dialogueData.variableNameToSet, true);
+        //    Debug.Log($"Variável '{dialogueData.variableNameToSet}' foi ativada.");
+        //}
     }
 }

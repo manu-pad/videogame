@@ -29,8 +29,10 @@ MonoBehaviour:
   typingSpeed: 0.05
   voiceSound: {fileID: 8300000, guid: 5d63276ff33ac0049a5dab69e3fa9e52, type: 3}
   voicePitch: 1
-  setEndDialogueFlag: 1
-  variableNameToSet: openGateOne
+  lineFlags:
+  - dialogueLineIndex: 4
+    variableName: openGateOne
+    value: 1
   choices:
   - dialogueIndex: 2
     choices:

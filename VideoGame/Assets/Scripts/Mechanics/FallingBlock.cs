@@ -1,79 +1,75 @@
-using System.Collections;
 using UnityEngine;
 
 public class FallingBlock : MonoBehaviour
 {
-    public float shakeDuration = 0.5f;
-    public float returnDelay = 3f;
-    public Transform detectionArea; // Área de trigger
-    public Vector3 shakeAmount = new Vector3(0.1f, 0f, 0f); // Chacoalha horizontalmente
-    public float shakeSpeed = 50f;
+    public GameObject groundTrigger;
+    public Transform fallTarget;
+    public float fallSpeed = 10f;
+    public float riseSpeed = 3f;
+    public float waitTime = 1f;
 
-    private Rigidbody2D rb;
-    private Vector3 originalPosition;
+    private bool playerDetected = false;
     private bool isFalling = false;
-    private bool isResetting = false;
+    private bool isWaiting = false;
+    private bool readyToDetect = true; 
+    private Vector3 startPosition;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        originalPosition = transform.position;
-        rb.bodyType = RigidbodyType2D.Kinematic; // Fica parado até cair
+        startPosition = transform.position;
+
+        if (groundTrigger == null)
+            Debug.LogWarning("GroundTrigger não atribuído!");
+
+        if (fallTarget == null)
+            Debug.LogError("Fall Target não atribuído!");
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void Update()
     {
-        if (other.CompareTag("Player") && !isFalling && !isResetting)
+        if (playerDetected && readyToDetect && !isFalling && !isWaiting)
         {
-            StartCoroutine(ShakeAndFall());
+            isFalling = true;
+            readyToDetect = false; 
+        }
+
+        if (isFalling)
+        {
+            float newY = Mathf.MoveTowards(transform.position.y, fallTarget.position.y, fallSpeed * Time.deltaTime);
+            transform.position = new Vector3(transform.position.x, newY, transform.position.z);
+
+            if (transform.position.y <= fallTarget.position.y + 0.01f)
+            {
+                transform.position = new Vector3(transform.position.x, fallTarget.position.y, transform.position.z);
+                isFalling = false;
+                isWaiting = true;
+                Invoke(nameof(StartRising), waitTime);
+            }
+        }
+        else if (!isWaiting && transform.position.y < startPosition.y)
+        {
+            float newY = Mathf.MoveTowards(transform.position.y, startPosition.y, riseSpeed * Time.deltaTime);
+            transform.position = new Vector3(transform.position.x, newY, transform.position.z);
+
+            if (transform.position.y >= startPosition.y - 0.01f)
+            {
+                transform.position = new Vector3(transform.position.x, startPosition.y, transform.position.z);
+                readyToDetect = true; 
+            }
         }
     }
 
-    IEnumerator ShakeAndFall()
+    private void OnTriggerStay2D(Collider2D other)
     {
-        // Sacudida
-        float elapsed = 0f;
-        while (elapsed < shakeDuration)
+        if (other.CompareTag("Player") && readyToDetect)
         {
-            float offset = Mathf.Sin(Time.time * shakeSpeed) * shakeAmount.x;
-            transform.position = originalPosition + new Vector3(offset, 0f, 0f);
-            elapsed += Time.deltaTime;
-            yield return null;
-        }
-
-        transform.position = originalPosition; // volta à posição exata
-        rb.bodyType = RigidbodyType2D.Dynamic; // começa a cair
-        isFalling = true;
-    }
-
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (isFalling && collision.collider.CompareTag("Ground")) // ou outra tag de chão
-        {
-            StartCoroutine(ResetBlock());
+            playerDetected = true;
         }
     }
 
-    IEnumerator ResetBlock()
+    void StartRising()
     {
-        isResetting = true;
-        isFalling = false;
-        rb.bodyType = RigidbodyType2D.Kinematic;
-        rb.linearVelocity = Vector2.zero;
-        yield return new WaitForSeconds(returnDelay);
-
-        float timeToReturn = 0.5f;
-        float elapsed = 0f;
-        Vector3 startPos = transform.position;
-
-        while (elapsed < timeToReturn)
-        {
-            transform.position = Vector3.Lerp(startPos, originalPosition, elapsed / timeToReturn);
-            elapsed += Time.deltaTime;
-            yield return null;
-        }
-
-        transform.position = originalPosition;
-        isResetting = false;
+        isWaiting = false;
+        playerDetected = false;
     }
 }
