@@ -6,6 +6,8 @@ public class TabController : MonoBehaviour
     public Button[] tabButtons;
     public GameObject[] pages;
 
+    //para atualizar os livros já lidos
+    public TextLibraryUI textLibraryUI;
     void Start()
     {
         for (int i = 0; i < tabButtons.Length; i++)
@@ -35,6 +37,11 @@ public class TabController : MonoBehaviour
 
         pages[tabNo].SetActive(true);
         SetButtonColor(tabButtons[tabNo], Color.white);
+
+        if (tabNo == pages.Length - 1 && textLibraryUI != null)
+        {
+            textLibraryUI.ShowLibrary();
+        }
     }
 
     private void SetButtonColor(Button button, Color color)

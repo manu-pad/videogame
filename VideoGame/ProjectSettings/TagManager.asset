@@ -58,13 +58,16 @@ TagManager:
   - name: Icon
     uniqueID: 1427972883
     locked: 0
+  - name: CorridorWall
+    uniqueID: 3840474593
+    locked: 0
   - name: TileSet
     uniqueID: 1358763909
     locked: 0
   - name: Foreground
     uniqueID: 766724153
     locked: 0
-  - name: groundtest
+  - name: Random
     uniqueID: 1345541843
     locked: 0
   - name: Default

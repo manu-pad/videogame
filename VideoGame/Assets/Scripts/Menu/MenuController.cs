@@ -3,6 +3,8 @@ using UnityEngine;
 public class MenuController : MonoBehaviour
 {
     public GameObject menuCanvas;
+    public TabController tabController; 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -14,12 +16,20 @@ public class MenuController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            if(!menuCanvas.activeSelf && PauseController.IsGamePaused)
+            if (!menuCanvas.activeSelf && PauseController.IsGamePaused)
             {
                 return;
             }
-            menuCanvas.SetActive(!menuCanvas.activeSelf);
-            PauseController.SetPause(menuCanvas.activeSelf);
+
+            bool isOpening = !menuCanvas.activeSelf;
+            menuCanvas.SetActive(isOpening);
+            PauseController.SetPause(isOpening);
+
+            if (isOpening && tabController != null)
+            {
+                tabController.ActivateTab(0); // força a aba 0
+            }
         }
+
     }
 }

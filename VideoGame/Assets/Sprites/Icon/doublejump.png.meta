@@ -1,0 +1,858 @@
+fileFormatVersion: 2
+guid: 86958c8871b840e49ab7748c9229f827
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9119744025594411223
+    second: doublejump_0
+  - first:
+      213: -1574220164692930521
+    second: doublejump_1
+  - first:
+      213: -4297052894116066154
+    second: doublejump_2
+  - first:
+      213: -7528060895297069430
+    second: doublejump_3
+  - first:
+      213: 1205268229466608199
+    second: doublejump_4
+  - first:
+      213: 3171666182491342532
+    second: doublejump_5
+  - first:
+      213: -3522746909671921096
+    second: doublejump_6
+  - first:
+      213: 7631059676095188066
+    second: doublejump_7
+  - first:
+      213: 1210280532593383160
+    second: doublejump_8
+  - first:
+      213: -5573859495286449466
+    second: doublejump_9
+  - first:
+      213: 6277840787199871318
+    second: doublejump_10
+  - first:
+      213: 7867808749032442478
+    second: doublejump_11
+  - first:
+      213: 6208986206501092961
+    second: doublejump_12
+  - first:
+      213: 8366967934442723519
+    second: doublejump_13
+  - first:
+      213: -8369174182438250829
+    second: doublejump_14
+  - first:
+      213: -575795401611291373
+    second: doublejump_15
+  - first:
+      213: 8503935981170080386
+    second: doublejump_16
+  - first:
+      213: 650798649458741645
+    second: doublejump_17
+  - first:
+      213: -2035194302552390357
+    second: doublejump_18
+  - first:
+      213: 3499609805983826401
+    second: doublejump_19
+  - first:
+      213: -4400308174200803897
+    second: doublejump_20
+  - first:
+      213: 2240217119971829157
+    second: doublejump_21
+  - first:
+      213: 963556936102083558
+    second: doublejump_22
+  - first:
+      213: -6477257300493349915
+    second: doublejump_23
+  - first:
+      213: 5715190244877725977
+    second: doublejump_24
+  - first:
+      213: 3780879683922511385
+    second: doublejump_25
+  - first:
+      213: 6912305075246903532
+    second: doublejump_26
+  - first:
+      213: 6998255694131661454
+    second: doublejump_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: doublejump_0
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 239
+        width: 128
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d8bb007fd6df8e70800000000000000
+      internalID: 9119744025594411223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublejump_1
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 310
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 720983dc91f372ae0800000000000000
+      internalID: -1574220164692930521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublejump_2
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 335
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69cc529d82dcd54c0800000000000000
+      internalID: -4297052894116066154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublejump_3
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 310
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8e1f484084f68790800000000000000
+      internalID: -7528060895297069430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublejump_4
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 310
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 742db64a119f9b010800000000000000
+      internalID: 1205268229466608199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublejump_5
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 310
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c60489b695040c20800000000000000
+      internalID: 3171666182491342532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublejump_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 310
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83a66679950bc1fc0800000000000000
+      internalID: -3522746909671921096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublejump_7
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 310
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26c06752858f6e960800000000000000
+      internalID: 7631059676095188066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublejump_8
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 310
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f69cc76bb7cbc010800000000000000
+      internalID: 1210280532593383160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublejump_9
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 310
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ca5383125ca5a2b0800000000000000
+      internalID: -5573859495286449466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublejump_10
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 310
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 659c18d3fee5f1750800000000000000
+      internalID: 6277840787199871318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublejump_11
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 310
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6a0ace2f52103d60800000000000000
+      internalID: 7867808749032442478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublejump_12
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 310
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16e3cc5ee00ca2650800000000000000
+      internalID: 6208986206501092961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublejump_13
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 302
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb8da8b91017d1470800000000000000
+      internalID: 8366967934442723519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublejump_14
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 310
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b6d5604c68badb80800000000000000
+      internalID: -8369174182438250829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublejump_15
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 310
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 315d7a7022d5208f0800000000000000
+      internalID: -575795401611291373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublejump_16
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 310
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28a3e4618bc040670800000000000000
+      internalID: 8503935981170080386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublejump_17
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 310
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d81da417ce9180900800000000000000
+      internalID: 650798649458741645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublejump_18
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 261
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b254773909981c3e0800000000000000
+      internalID: -2035194302552390357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublejump_19
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 261
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e1c32aa39c119030800000000000000
+      internalID: 3499609805983826401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublejump_20
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 261
+        width: 10
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cd63868707fee2c0800000000000000
+      internalID: -4400308174200803897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublejump_21
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 261
+        width: 13
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a56ba7f999d61f10800000000000000
+      internalID: 2240217119971829157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublejump_22
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 261
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eb7a31aded3f5d00800000000000000
+      internalID: 963556936102083558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublejump_23
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 261
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ebc94d9dc82c16a0800000000000000
+      internalID: -6477257300493349915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublejump_24
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 261
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 911f6b15f3f605f40800000000000000
+      internalID: 5715190244877725977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublejump_25
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 252
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91641b26a02687430800000000000000
+      internalID: 3780879683922511385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublejump_26
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 261
+        width: 10
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce0b83dc7d07def50800000000000000
+      internalID: 6912305075246903532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doublejump_27
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 261
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8a8218b97cce1160800000000000000
+      internalID: 6998255694131661454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      doublejump_0: 9119744025594411223
+      doublejump_1: -1574220164692930521
+      doublejump_10: 6277840787199871318
+      doublejump_11: 7867808749032442478
+      doublejump_12: 6208986206501092961
+      doublejump_13: 8366967934442723519
+      doublejump_14: -8369174182438250829
+      doublejump_15: -575795401611291373
+      doublejump_16: 8503935981170080386
+      doublejump_17: 650798649458741645
+      doublejump_18: -2035194302552390357
+      doublejump_19: 3499609805983826401
+      doublejump_2: -4297052894116066154
+      doublejump_20: -4400308174200803897
+      doublejump_21: 2240217119971829157
+      doublejump_22: 963556936102083558
+      doublejump_23: -6477257300493349915
+      doublejump_24: 5715190244877725977
+      doublejump_25: 3780879683922511385
+      doublejump_26: 6912305075246903532
+      doublejump_27: 6998255694131661454
+      doublejump_3: -7528060895297069430
+      doublejump_4: 1205268229466608199
+      doublejump_5: 3171666182491342532
+      doublejump_6: -3522746909671921096
+      doublejump_7: 7631059676095188066
+      doublejump_8: 1210280532593383160
+      doublejump_9: -5573859495286449466
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

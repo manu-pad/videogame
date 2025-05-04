@@ -13,5 +13,29 @@ MonoBehaviour:
   m_Name: InspectionTexts
   m_EditorClassIdentifier: 
   inspectionTexts:
-  - "\u201CA R\xE9mora, t\xE3o pequena, tem for\xE7a de parar navios.\nO pequeno
-    que pensa vale mais que o grande que destr\xF3i.\u201D"
+  - title: Peixe de Tobias
+    text: "\u201CTu, peixe de Tobias, que com o fel curaste a cegueira do velho pai,
+      \xE9s exemplo de caridade que alumia.\u201D\nTeu fel \xE9 rem\xE9dio, e tua
+      mem\xF3ria, \u201Cdoutrina oculta com que Deus fala aos homens.\u201D"
+  - title: "R\xE9mora"
+    text: "Tu, r\xE9mora, \u201Cpeixe t\xE3o pequeno no corpo, qu\xE3o grande na
+      for\xE7a,\u201D que tens poder de parar naus, \xE9s prova de que n\xE3o \xE9
+      o tamanho, mas o efeito que faz o valor.\nEm ti se v\xEA que \u201Cas palavras
+      pequenas, com virtude, fazem grandes efeitos.\u201D"
+  - title: Voador
+    text: "V\xF3s, peixes voadores, \u201Cque n\xE3o contentes com o ser peixes,
+      quereis ser aves,\u201D sois \u201Cpescados como peixes e ca\xE7ados como aves.\u201D\nPorque
+      quem \u201Cdeixa o pr\xF3prio estado, perde o natural e n\xE3o alcan\xE7a o
+      alheio.\u201D"
+  - title: Quatro-Olhos
+    text: "Tu, quatro-olhos, \u201Cque com uns olhos olhas para cima e com outros
+      para baixo,\u201D ensinas que \xE9 \u201Cgrande prud\xEAncia ver o c\xE9u e
+      a terra, o espiritual e o temporal.\u201D\nPeixe \xE9s, mas pareces s\xE1bio,
+      pois vigias \u201Cos perigos do mundo e as luzes do alto.\u201D"
+  - title: Poema dos 3 Homens
+    text: "Tr\xEAs homens andam pela estrada,\r\nO primeiro com olhos de cura,\r\nNo
+      gesto, um rem\xE9dio traz,\r\nE a cegueira, ele apura.\r\n\r\nO segundo, pequeno
+      em estatura,\r\nMas for\xE7a que move os mares,\r\nNa sua fala, sempre calma,\r\nParando
+      at\xE9 os grandes lugares.\r\n\r\nO terceiro, no vento se lan\xE7a,\r\nBuscando
+      o alto e a liberdade,\r\nMas ao fugir de sua ess\xEAncia,\r\nCai na armadilha
+      da vaidade.\r\n"
