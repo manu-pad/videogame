@@ -15,12 +15,24 @@ MonoBehaviour:
   npcName: 
   npcPortrait: {fileID: 0}
   dialogueLines:
-  - "O peixe astuto de Padre Ant\xF3nio Vieira"
+  - "Qual \xE9 o primeiro grande obst\xE1culo natural que os portugueses enfrentam
+    antes de chegarem \xE0 \xCDndia?"
+  - "N\xE3o me parece isso.. Tente novamente."
+  - "Resposta correta. Poder\xE1 prosseguir."
   autoProgressionLines: 
-  endDialogueLines: 
+  endDialogueLines: 000001
   autoProgressionDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 0}
   voicePitch: 1
-  lineFlags: []
-  choices: []
+  lineFlags:
+  - dialogueLineIndex: 2
+    variableName: openGateTwo
+    value: 1
+  choices:
+  - dialogueIndex: 0
+    choices:
+    - O Estreito de Gibraltar
+    - O Cabo das Tormentas
+    - O Mar Vermelho
+    nextDialogueIndexes: 010000000200000001000000

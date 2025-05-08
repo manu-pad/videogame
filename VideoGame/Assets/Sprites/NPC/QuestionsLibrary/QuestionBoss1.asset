@@ -29,22 +29,37 @@ MonoBehaviour:
   voiceSound: {fileID: 0}
   voicePitch: 1
   lineFlags:
-  - dialogueLineIndex: 2
-    variableName: RightAnswer1
-    value: 1
-  - dialogueLineIndex: 4
-    variableName: RightAnswer2
+  - dialogueLineIndex: 6
+    variableName: finalGateOne
     value: 1
   choices:
   - dialogueIndex: 0
     choices:
-    - Dourado
-    - Quatro-olhos
-    - Peixe de Tobias
-    nextDialogueIndexes: 010000000100000002000000
-  - dialogueIndex: 1
-    choices:
     - Remora
     - Roncador
     - Torpedo
-    nextDialogueIndexes: 040000000300000003000000
+    nextDialogueIndexes: 020000000100000001000000
+  - dialogueIndex: 1
+    choices:
+    - Quatro-olhos
+    - Peixe de Tobias
+    - Pegador
+    nextDialogueIndexes: 030000000300000003000000
+  - dialogueIndex: 2
+    choices:
+    - Quatro-olhos
+    - Peixe de Tobias
+    - Pegador
+    nextDialogueIndexes: 030000000400000003000000
+  - dialogueIndex: 3
+    choices:
+    - Voador
+    - Voga
+    - Dourado
+    nextDialogueIndexes: 050000000500000005000000
+  - dialogueIndex: 4
+    choices:
+    - Voador
+    - Voga
+    - Dourado
+    nextDialogueIndexes: 060000000500000005000000
