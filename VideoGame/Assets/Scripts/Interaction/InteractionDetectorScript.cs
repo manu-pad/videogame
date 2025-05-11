@@ -5,10 +5,13 @@ public class InteractionDetectorScript : MonoBehaviour
 {
     private IInteractable interactableInRange = null;
     public GameObject interactionIcon;
+    private NPC npc;
+    private BookInspect bookInspectInRange;
 
 
     void Start()
     {
+        npc = FindObjectOfType<NPC>();
         interactionIcon.SetActive(false);
     }
 
@@ -33,10 +36,16 @@ public class InteractionDetectorScript : MonoBehaviour
             Debug.Log("Interativo detectado: " + interactable);
             interactionIcon.SetActive(true);
             DicasController.Instance.SetDica("Pressione [E] para interagir!");
+            return;
         }
-        else
+
+        if (collision.TryGetComponent(out BookInspect bookInspect)
+                && !bookInspect.IsInspectionActive()
+                && !bookInspect.WasRead())
         {
-            //Debug.Log("Nenhum objeto interativo detectado ou não pode interagir.");
+            bookInspectInRange = bookInspect;
+            interactionIcon.SetActive(true);
+            DicasController.Instance.SetDica("Pressione [I] para inspecionar!");
         }
     }
 
@@ -47,6 +56,13 @@ public class InteractionDetectorScript : MonoBehaviour
             interactableInRange = null;
             interactionIcon.SetActive(false);
             Debug.Log("Objeto interativo saiu da área.");
+            DicasController.Instance.SetDica("");
+        }
+
+        if (collision.TryGetComponent(out BookInspect bookInspect) && bookInspect == bookInspectInRange)
+        {
+            bookInspectInRange = null;
+            interactionIcon.SetActive(false);
             DicasController.Instance.SetDica("");
         }
     }

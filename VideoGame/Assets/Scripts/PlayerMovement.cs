@@ -75,6 +75,15 @@ public class PlayerMovement : MonoBehaviour
         WallSlide();
         WallJump();
 
+        if (PauseController.IsGamePaused)
+        {
+            rb.linearVelocity = Vector2.zero; 
+            rb.gravityScale = 0f;
+            animator.SetBool("run", false); 
+            StopFootsteps(); 
+            return; 
+        }
+
         if (!isWallJumping)
         {
             rb.linearVelocity = new Vector2(horizontalMovement * moveSpeed, rb.linearVelocity.y);
@@ -97,15 +106,6 @@ public class PlayerMovement : MonoBehaviour
             StopFootsteps();
         }
 
-        if (PauseController.IsGamePaused)
-        {
-            rb.linearVelocity = Vector2.zero;
-            animator.SetBool("run", false);
-            StopFootsteps();
-            return;
-        }
-
-        // Define a posi��o do ataque baseado na dire��o que o player est� virado
         attackPos = (Vector2)transform.position + (isFacingRight ? Vector2.right : Vector2.left) * attackRange;
 
     }
@@ -148,22 +148,19 @@ public class PlayerMovement : MonoBehaviour
         if(context.performed && wallJumpTimer > 0)
         {
             isWallJumping = true;
-            //jump away from wall
+
             rb.linearVelocity = new Vector2(wallJumpDirection * wallJumpPower.x, wallJumpPower.y);
             wallJumpTimer = 0;
             animator.SetTrigger("jump");
 
 
-            //l�gica para fazer o personagem virar-se
             isFacingRight = wallJumpDirection > 0;
             spriteRenderer.flipX = !isFacingRight;
 
-            //inverte o wallCheckPos para o outro lado
             Vector3 wallCheckLocalPos = wallCheckPos.localPosition;
             wallCheckLocalPos.x = Mathf.Abs(wallCheckLocalPos.x) * (isFacingRight ? 1 : -1);
             wallCheckPos.localPosition = wallCheckLocalPos;
 
-            //how long wall jump will last
             Invoke(nameof(CancelWallJump), wallJumpTime + 0.1f);
         }
         
@@ -197,7 +194,7 @@ public class PlayerMovement : MonoBehaviour
         {
             isFacingRight = true;
         }
-        spriteRenderer.flipX = !isFacingRight; // Inverte o sprite baseado na dire��o
+        spriteRenderer.flipX = !isFacingRight; 
 
         Vector3 wallCheckLocalPos = wallCheckPos.localPosition;
         wallCheckLocalPos.x = Mathf.Abs(wallCheckLocalPos.x) * (isFacingRight ? 1 : -1);
@@ -246,7 +243,6 @@ public class PlayerMovement : MonoBehaviour
             lastAttackTime = Time.time;
             animator.SetTrigger("attack");
 
-            // Visual: desenhar "caixa" de ataque e detectar inimigos
             Collider2D[] hitEnemies = Physics2D.OverlapBoxAll(attackPos, attackBoxSize, 0);
             foreach (Collider2D enemy in hitEnemies)
             {
@@ -256,9 +252,6 @@ public class PlayerMovement : MonoBehaviour
                     Debug.Log("Inimigo atingido!");
                 }
             }
-
-
-            // Se quiser um efeito visual/som, pode chamar aqui tamb�m
         }
     }
 

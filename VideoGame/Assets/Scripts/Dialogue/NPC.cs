@@ -4,35 +4,35 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 
-
 public class NPC : MonoBehaviour, IInteractable
 {
     public NPCDialogue dialogueData;
     private DialogueManager dialogueUI;
 
-    public InventoryController inventoryController; 
-
+    public InventoryController inventoryController;
 
     private int dialogueIndex;
     private bool isTyping, isDialogueActive;
 
+    public bool finalDialogueEnd;
     void Start()
     {
         dialogueUI = DialogueManager.Instance;
-
     }
 
     public bool CanInteract()
     {
-        return !isDialogueActive;
+        return !isDialogueActive && !finalDialogueEnd;
     }
-
 
     public void Interact()
     {
-        //PauseController.IsGamePaused && !isDialogueActive
-        if (dialogueData == null)
+        // PauseController.IsGamePaused && !isDialogueActive
+        if (dialogueData == null) return;
+
+        if (finalDialogueEnd == true)
         {
+            NextLine();
             return;
         }
 
@@ -52,10 +52,8 @@ public class NPC : MonoBehaviour, IInteractable
         dialogueIndex = 0;
 
         dialogueUI.SetNPCInfo(dialogueData.npcName, dialogueData.npcPortrait);
-
         dialogueUI.ShowDialogueUI(true);
-
-        //PauseController.SetPause(true);
+        PauseController.SetPause(true);
 
         if (inventoryController != null)
         {
@@ -74,28 +72,26 @@ public class NPC : MonoBehaviour, IInteractable
             isTyping = false;
             return;
         }
-        //clearout choices
+
+        // Clear out choices
         dialogueUI.ClearChoices();
 
-
-        //check endDIalogueline
+        // Check endDialogueLine
         if (dialogueData.endDialogueLines.Length > dialogueIndex && dialogueData.endDialogueLines[dialogueIndex])
         {
             EndDialogue();
             return;
         }
 
-        //check if there are choices
-        foreach(DialogueChoice dialogueChoice in dialogueData.choices)
+        // Check if there are choices
+        foreach (DialogueChoice dialogueChoice in dialogueData.choices)
         {
-            if(dialogueChoice.dialogueIndex == dialogueIndex)
+            if (dialogueChoice.dialogueIndex == dialogueIndex)
             {
                 DisplayChoices(dialogueChoice);
                 return;
             }
         }
-
-        dialogueIndex++;
 
         if (++dialogueIndex < dialogueData.dialogueLines.Length)
         {
@@ -115,7 +111,6 @@ public class NPC : MonoBehaviour, IInteractable
         foreach (char letter in dialogueData.dialogueLines[dialogueIndex])
         {
             dialogueUI.SetDialogueText(dialogueUI.dialogueText.text += letter);
-
             yield return new WaitForSeconds(dialogueData.typingSpeed);
         }
 
@@ -157,6 +152,7 @@ public class NPC : MonoBehaviour, IInteractable
                 {
                     VariableManager.Instance.SetVariable(flag.variableName, flag.value);
                     Debug.Log($"Flag '{flag.variableName}' ativada na linha {dialogueIndex}.");
+                    finalDialogueEnd = true;
                 }
             }
         }
@@ -164,36 +160,22 @@ public class NPC : MonoBehaviour, IInteractable
         StartCoroutine(TypeLine());
     }
 
-
     public void EndDialogue()
     {
-
         StopAllCoroutines();
         isDialogueActive = false;
         dialogueUI.SetDialogueText("");
         dialogueUI.ShowDialogueUI(false);
-        //PauseController.SetPause(false);
+        PauseController.SetPause(false);
 
-        //AQUI PARA REATIVAR O INVENTARIO -- TIREI JÁ QUE NÃO VOU USAR AGORA
-        //if (inventoryController != null)
-        //{
-        //    inventoryController.inventoryPanel.SetActive(true);
-        //}
+        if (inventoryController != null)
+        {
+            inventoryController.inventoryPanel.SetActive(true);
+        }
 
-
-        ////vai buscar as flags do NPCDialogue que passam no VariableManager
-        //if (dialogueData == null)
-        //{
-        //    Debug.LogError("dialogueData está NULL!");
-        //}
-        //else if (VariableManager.Instance == null)
-        //{
-        //    Debug.LogError("VariableManager.Instance está NULL!");
-        //}
-        //else if (dialogueData.setEndDialogueFlag && !string.IsNullOrEmpty(dialogueData.variableNameToSet))
-        //{
-        //    VariableManager.Instance.SetVariable(dialogueData.variableNameToSet, true);
-        //    Debug.Log($"Variável '{dialogueData.variableNameToSet}' foi ativada.");
-        //}
+    }
+    public void ResetDialogues()
+    {
+        finalDialogueEnd = false;
     }
 }

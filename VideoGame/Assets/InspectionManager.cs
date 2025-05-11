@@ -38,4 +38,9 @@ public class InspectionManager : MonoBehaviour
         Debug.Log($"Total de textos registrados: {readTexts.Count}");
         return readTexts;
     }
+
+    public void ResetReadTexts()
+    {
+        readTexts.Clear();
+    }
 }

@@ -22,6 +22,11 @@ public class MovingPlatform : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (PauseController.IsGamePaused)
+        {
+            return;
+        }
+        
         if (!isWaiting)
         {
             transform.position = Vector3.MoveTowards(transform.position, nextPosition, moveSpeed * Time.deltaTime);

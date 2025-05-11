@@ -24,6 +24,10 @@ public class InventoryController : MonoBehaviour
 
     public bool AddItem(GameObject itemPrefab)
     {
+        if (itemPrefab.GetComponent<RectTransform>() == null)
+        {
+            return false;
+        }
         foreach (Transform slotTransform in inventoryPanel.transform)
         {
             Slot slot = slotTransform.GetComponent<Slot>();
@@ -39,6 +43,20 @@ public class InventoryController : MonoBehaviour
         Debug.Log("Inventory is full!");
         return false;
     }
+
+    public void ClearInventory()
+    {
+        foreach (Transform slotTransform in inventoryPanel.transform)
+        {
+            Slot slot = slotTransform.GetComponent<Slot>();
+            if (slot != null && slot.currentItem != null)
+            {
+                Destroy(slot.currentItem); // Remove o item da UI
+                slot.currentItem = null;   // Limpa a referência no slot
+            }
+        }
+    }
+
 
     // Update is called once per frame
     void Update()

@@ -1,24 +1,20 @@
 using UnityEngine;
-using UnityEngine.UI;  // Importa o namespace para o componente Text
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 
 public class DicasController : MonoBehaviour
 {
-    // Instância única do DicasController
     public static DicasController Instance;
-
-    // Referência ao componente Text que você vai alterar
     public TMP_Text dicasText;
+    public float tempoDeExibicao = 3f;
+    private Coroutine exibindoDicaCoroutine;
 
-    // Garantindo que haja uma única instância do DicasController
     void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);  // Não destruir o GameObject entre cenas
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -26,12 +22,27 @@ public class DicasController : MonoBehaviour
         }
     }
 
-    // Método para alterar o texto da dica
     public void SetDica(string mensagem)
+    {
+        if (exibindoDicaCoroutine != null)
+        {
+            StopCoroutine(exibindoDicaCoroutine);
+        }
+        exibindoDicaCoroutine = StartCoroutine(ExibirDicaTemporaria(mensagem));
+    }
+
+    private IEnumerator ExibirDicaTemporaria(string mensagem)
     {
         if (dicasText != null)
         {
-            dicasText.text = mensagem;  // Alterar o texto do componente Text
+            dicasText.text = mensagem;
+        }
+
+        yield return new WaitForSeconds(tempoDeExibicao);
+
+        if (dicasText != null)
+        {
+            dicasText.text = "";
         }
     }
 }

@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 //esse script fica nos objetos, que podem parar no inventário e serem arrastados de novo
-public class ItemDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class ItemDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerClickHandler
 {
     private Transform originalParent;
     private CanvasGroup canvasGroup;
@@ -134,4 +134,19 @@ public class ItemDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         // Destruir o item da UI
         Destroy(gameObject);
     }
+
+    //para mostrar o nome do livro
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        BookInspect2 book = GetComponent<BookInspect2>();
+        if (book != null)
+        {
+            DicasController.Instance.SetDica(book.bookName);
+        }
+        else
+        {
+            Debug.LogWarning("BookInspect2 não encontrado no item!");
+        }
+    }
+
 }

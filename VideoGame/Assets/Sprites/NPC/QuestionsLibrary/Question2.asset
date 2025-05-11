@@ -25,6 +25,8 @@ MonoBehaviour:
   typingSpeed: 0.05
   voiceSound: {fileID: 0}
   voicePitch: 1
+  isRepeatable: 1
+  completionVariableName: 
   lineFlags:
   - dialogueLineIndex: 2
     variableName: openGateTwo

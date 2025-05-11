@@ -13,10 +13,10 @@ public class NPCDialogue : ScriptableObject
     public float typingSpeed = 0.05f;
     public AudioClip voiceSound;
     public float voicePitch = 1f;
+  
 
     //flags
     public DialogueFlag[] lineFlags;
-
     //choices
     public DialogueChoice[] choices; //choices for the player
 }
@@ -24,15 +24,15 @@ public class NPCDialogue : ScriptableObject
 [System.Serializable]
 public class DialogueChoice
 {
-    public int dialogueIndex; //dialogue lines where choices appear
-    public string[] choices; //player response options
-    public int[] nextDialogueIndexes; //indices of the next dialogues for each choice
+    public int dialogueIndex;
+    public string[] choices;
+    public int[] nextDialogueIndexes;
 }
 
 [System.Serializable]
 public class DialogueFlag
 {
-    public int dialogueLineIndex; // índice da linha do diálogo
+    public int dialogueLineIndex;
     public string variableName;
     public bool value = true;
 }

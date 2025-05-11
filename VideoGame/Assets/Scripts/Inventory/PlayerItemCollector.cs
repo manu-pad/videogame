@@ -47,8 +47,14 @@ public class PlayerItemCollector : MonoBehaviour
                     if (inspect != null)
                         inspect.HideInspection();
 
-                    Destroy(currentItem); // Destroi o item após adicioná-lo ao inventário
-                    currentItem = null; // Reseta a variável currentItem
+                    var inspect2 = currentItem.GetComponent<BookInspect2>();
+                    if (inspect2 != null)
+                    {
+                        inspect2.SetCollected(true); 
+                    }
+
+                    currentItem.SetActive(false); // Apenas uma vez!
+                    currentItem = null; // Reseta o item atual
                 }
             }
         }

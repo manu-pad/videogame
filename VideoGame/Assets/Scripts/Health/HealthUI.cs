@@ -7,6 +7,8 @@ public class HealthUI : MonoBehaviour
     public Image heartPrefab;
     public Sprite fullHeartSprite;
     public Sprite emptyHeartSprite;
+    public Sprite halfHeartSprite;
+
 
     private List<Image> hearts = new List<Image>();
 
@@ -26,13 +28,17 @@ public class HealthUI : MonoBehaviour
         }
     }
 
-    public void UpdateHearts(int currentHealth)
+    public void UpdateHearts(float currentHealth)
     {
         for (int i = 0; i < hearts.Count; i++)
         {
-            if (i < currentHealth)
+            if (i < Mathf.FloorToInt(currentHealth))
             {
                 hearts[i].sprite = fullHeartSprite;
+            }
+            else if (i < currentHealth)
+            {
+                hearts[i].sprite = halfHeartSprite;
             }
             else
             {

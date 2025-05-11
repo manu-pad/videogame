@@ -64,4 +64,25 @@ public class WorldActionsController : MonoBehaviour
 
 
 
+    public void ResetGates()
+    {
+        ResetGatePosition(gateOne);
+        ResetGatePosition(gateTwo);
+        ResetGatePosition(gateThree);
+        ResetGatePosition(gateFour);
+        ResetGatePosition(gateFive);
+        ResetGatePosition(gateSix);
+        ResetGatePosition(finalGateOne);
+    }
+
+    private void ResetGatePosition(Transform gate)
+    {
+        if (initialHeights.ContainsKey(gate))
+        {
+            Vector3 pos = gate.position;
+            pos.y = initialHeights[gate];
+            gate.position = pos;
+        }
+    }
+
 }

@@ -33,6 +33,9 @@ MonoBehaviour:
   - dialogueLineIndex: 4
     variableName: openGateOne
     value: 1
+  - dialogueLineIndex: 4
+    variableName: missionOne
+    value: 1
   choices:
   - dialogueIndex: 2
     choices:

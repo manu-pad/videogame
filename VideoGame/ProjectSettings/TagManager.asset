@@ -9,6 +9,7 @@ TagManager:
   - WorldSlot
   - Enemy
   - MovingPlatform
+  - Flower
   layers:
   - Default
   - TransparentFX
