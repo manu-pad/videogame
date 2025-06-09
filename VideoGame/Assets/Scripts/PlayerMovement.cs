@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     bool isFacingRight = true;
     private SpriteRenderer spriteRenderer;
     private Animator animator;
+    //áudio
     private bool playingFootsteps = false;
     public float footstepSpeed = 0.5f; // tempo entre os passos
 

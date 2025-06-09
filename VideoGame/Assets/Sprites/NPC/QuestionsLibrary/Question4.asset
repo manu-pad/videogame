@@ -19,7 +19,7 @@ MonoBehaviour:
   - "N\xE3o me parece isso.. Tente novamente."
   - "Resposta correta. Poder\xE1 prosseguir."
   autoProgressionLines: 
-  endDialogueLines: 000101
+  endDialogueLines: 000100
   autoProgressionDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 0}

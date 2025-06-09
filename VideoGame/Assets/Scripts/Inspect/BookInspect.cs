@@ -10,6 +10,8 @@ public class BookInspect : MonoBehaviour
     public InspectionTextsDatabase textDatabase; // ficheiro com todas as frases
     public int textIndex; // índice da frase a usar para este objeto
     private bool wasRead = false;
+    public bool destroyAfterRead = false;
+
 
     public static int booksInspectedCount1 = 0;
 
@@ -31,6 +33,7 @@ public class BookInspect : MonoBehaviour
                 string title = entry.title;
                 string text = entry.text;
                 inspectionTextUI.text = $"<b>{title}</b>\n\n{text}";
+                PauseController.SetPause(true);
             }
             else
             {
@@ -38,13 +41,17 @@ public class BookInspect : MonoBehaviour
             }
             if (!wasRead)
             {
-                booksInspectedCount1++;
                 if (textIndex >= 0 && textIndex < textDatabase.inspectionTexts.Length)
                 {
                     var entry = textDatabase.inspectionTexts[textIndex];
                     InspectionManager.Instance?.RegisterReadText(entry);
+                    booksInspectedCount1++;
+                    //atualiza a função da quest cada vez que o valor do livro atualiza
+                    QuestsController.Instance?.UpdateQuestProgress("missionOne", booksInspectedCount1, 7);
                 }
                 wasRead = true;
+
+               
             }
 
         }
@@ -54,6 +61,12 @@ public class BookInspect : MonoBehaviour
     {
         if (inspectionUI != null)
             inspectionUI.SetActive(false);
+            PauseController.SetPause(false);
+        //se o destruir estiver ativado na checkbox
+        if (destroyAfterRead && wasRead)
+        {
+            Destroy(gameObject, 0.5f); // tempo opcional para dar tempo da UI desaparecer
+        }
     }
 
     public bool IsInspectionActive()
