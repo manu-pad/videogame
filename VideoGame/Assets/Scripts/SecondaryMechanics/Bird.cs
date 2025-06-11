@@ -71,6 +71,7 @@ public class Bird : MonoBehaviour
 
                 float sheepHeight = GetComponent<Collider2D>().bounds.extents.y;
                 transform.position = new Vector2(bottomPosition.x, bottomPosition.y + sheepHeight);
+                VariableManager.Instance.SetVariable("birdPosition", true);
             }
 
             rb.bodyType = RigidbodyType2D.Kinematic;

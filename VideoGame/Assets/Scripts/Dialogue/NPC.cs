@@ -15,6 +15,7 @@ public class NPC : MonoBehaviour, IInteractable
     private bool isTyping, isDialogueActive;
 
     public bool finalDialogueEnd;
+
     void Start()
     {
         dialogueUI = DialogueManager.Instance;
@@ -178,4 +179,7 @@ public class NPC : MonoBehaviour, IInteractable
     {
         finalDialogueEnd = false;
     }
+
+
+
 }

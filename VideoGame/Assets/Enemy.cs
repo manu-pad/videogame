@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class Enemy : MonoBehaviour
 {
@@ -13,6 +14,9 @@ public class Enemy : MonoBehaviour
     private Rigidbody2D rb;
     private int currentHits = 0;
 
+    private SpriteRenderer spriteRenderer;
+    private bool invulnerable = false;
+
     //se o player spawnar, o enemy deve voltar a posição inicial
     private Vector2 initialPosition;
 
@@ -22,6 +26,8 @@ public class Enemy : MonoBehaviour
         rb.gravityScale = 0f;  // garante que a gravidade nao afeta
         initialPosition = transform.position;
         maxLifePoints = lifePoints;
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
     }
 
     void FixedUpdate()
@@ -52,6 +58,8 @@ public class Enemy : MonoBehaviour
 
     public void EnemyTakeDamage()
     {
+        if (invulnerable) return;
+
         currentHits++;
         Debug.Log($"Inimigo atingido! {currentHits}/{lifePoints} vezes.");
 
@@ -59,6 +67,32 @@ public class Enemy : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        else
+        {
+            StartCoroutine(FlashRedAndInvulnerable());
+        }
+    }
+
+    private IEnumerator FlashRedAndInvulnerable()
+    {
+        Color originalColor = spriteRenderer.color;
+        invulnerable = true;
+
+        float duration = 0.2f;
+        float interval = 0.05f;
+        float elapsed = 0f;
+
+        while (elapsed < duration)
+        {
+            spriteRenderer.color = Color.red;
+            yield return new WaitForSeconds(interval);
+            spriteRenderer.color = originalColor;
+            yield return new WaitForSeconds(interval);
+            elapsed += interval * 3;
+        }
+
+        spriteRenderer.color = originalColor;
+        invulnerable = false;
     }
 
     public void ResetEnemy()

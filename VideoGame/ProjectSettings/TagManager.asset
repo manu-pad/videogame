@@ -10,6 +10,9 @@ TagManager:
   - Enemy
   - MovingPlatform
   - Flower
+  - Water
+  - Spike
+  - Lava
   layers:
   - Default
   - TransparentFX

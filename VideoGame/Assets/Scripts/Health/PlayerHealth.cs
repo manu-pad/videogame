@@ -38,6 +38,21 @@ public class PlayerHealth : MonoBehaviour
                 Debug.Log("Vida já está no máximo, a flor não desaparece.");
             }
         }
+        if (collider.transform.CompareTag("Spike"))
+        {
+            TakeDamage(1f);
+            Debug.Log("Vidas restantes: " + currentHealth);
+        }
+        if (collider.transform.CompareTag("Lava"))
+        {
+            TakeDamage(1f);
+            Debug.Log("Vidas restantes: " + currentHealth);
+        }
+        if (collider.transform.CompareTag("Water"))
+        {
+            TakeDamage(1f);
+            Debug.Log("Vidas restantes: " + currentHealth);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
