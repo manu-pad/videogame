@@ -23,14 +23,24 @@ public class PlayerHealth : MonoBehaviour
 
     }
 
+
+    void Update()
+    {
+        //para testes, remover depois
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            TakeDamage(1f);
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.CompareTag("Flower"))
         {
             if (currentHealth < maxHealth)
             {
-                GainHealth(0.5f); 
-                Destroy(collider.gameObject); 
+                GainHealth(0.5f);
+                Destroy(collider.gameObject);
                 Debug.Log("Vida aumentada para: " + currentHealth);
             }
             else
@@ -49,6 +59,11 @@ public class PlayerHealth : MonoBehaviour
             Debug.Log("Vidas restantes: " + currentHealth);
         }
         if (collider.transform.CompareTag("Water"))
+        {
+            TakeDamage(1f);
+            Debug.Log("Vidas restantes: " + currentHealth);
+        }
+        if (collider.transform.CompareTag("FallingBlock"))
         {
             TakeDamage(1f);
             Debug.Log("Vidas restantes: " + currentHealth);

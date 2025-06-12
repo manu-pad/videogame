@@ -7,19 +7,26 @@ public class InventoryController : MonoBehaviour
     public int slotCount;
     public GameObject[] itemPrefabs;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        for(int i = 0; i < slotCount; i++)
+        for (int i = 0; i < slotCount; i++)
         {
             Slot slot = Instantiate(slotPrefab, inventoryPanel.transform).GetComponent<Slot>();
-            if(i < itemPrefabs.Length)
+            if (i < itemPrefabs.Length)
             {
                 GameObject item = Instantiate(itemPrefabs[i], slot.transform);
                 item.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
                 slot.currentItem = item;
             }
         }
+
+        inventoryPanel.SetActive(false); // começa oculto
+    }
+
+    void Update()
+    {
+        bool isActive = VariableManager.Instance.GetVariable("inventoryActivate");
+        inventoryPanel.SetActive(isActive);
     }
 
     public bool AddItem(GameObject itemPrefab)
@@ -28,6 +35,7 @@ public class InventoryController : MonoBehaviour
         {
             return false;
         }
+
         foreach (Transform slotTransform in inventoryPanel.transform)
         {
             Slot slot = slotTransform.GetComponent<Slot>();
@@ -51,16 +59,40 @@ public class InventoryController : MonoBehaviour
             Slot slot = slotTransform.GetComponent<Slot>();
             if (slot != null && slot.currentItem != null)
             {
-                Destroy(slot.currentItem); // Remove o item da UI
-                slot.currentItem = null;   // Limpa a referência no slot
+                Destroy(slot.currentItem);
+                slot.currentItem = null;
             }
         }
     }
 
-
-    // Update is called once per frame
-    void Update()
+    public void ShowInventory()
+{
+    // Só mostra se o inventário foi desbloqueado
+    if (VariableManager.Instance.GetVariable("inventoryActivate"))
     {
-        
+        inventoryPanel.SetActive(true);
     }
+}
+
+public void HideInventory()
+{
+    inventoryPanel.SetActive(false);
+}
+
+public bool IsInventoryFull()
+{
+    int filledSlots = 0;
+
+    foreach (Transform slotTransform in inventoryPanel.transform)
+    {
+        Slot slot = slotTransform.GetComponent<Slot>();
+        if (slot != null && slot.currentItem != null)
+        {
+            filledSlots++;
+        }
+    }
+
+    return filledSlots >= slotCount;
+}
+
 }

@@ -15,12 +15,12 @@ public class NPCDialogue : ScriptableObject
     public float voicePitch = 1f;
     //public bool newDialogue;
 
-
-
     //flags
     public DialogueFlag[] lineFlags;
     //choices
     public DialogueChoice[] choices; //choices for the player
+
+    public bool resetDialogue = true;
 }
 
 [System.Serializable]

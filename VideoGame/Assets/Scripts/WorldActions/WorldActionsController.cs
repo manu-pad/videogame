@@ -21,9 +21,13 @@ public class WorldActionsController : MonoBehaviour
     public Transform woodThree2_1;
     public Transform woodThree2_2;
     //level3
+    public Transform gateOne3;
     public Transform woodTwo3;
     public Transform woodThree3;
     public Transform woodFour3;
+    public Transform gateTwo3; 
+    public Transform gateThree3; 
+    public Transform gateFour3; 
 
     private Dictionary<Transform, float> initialHeights = new Dictionary<Transform, float>();
 
@@ -45,9 +49,13 @@ public class WorldActionsController : MonoBehaviour
         initialHeights[woodThree2_1] = woodThree2_1.position.y;
         initialHeights[woodThree2_2] = woodThree2_2.position.y;
         //level3
+        initialHeights[gateOne3] = gateOne3.position.y;
         initialHeights[woodTwo3] = woodTwo3.position.y;
         initialHeights[woodThree3] = woodThree3.position.y;
         initialHeights[woodFour3] = woodFour3.position.y;
+        initialHeights[gateTwo3] = gateTwo3.position.y;
+        initialHeights[gateThree3] = gateThree3.position.y;
+        initialHeights[gateFour3] = gateFour3.position.y;
 
     }
 
@@ -71,9 +79,13 @@ public class WorldActionsController : MonoBehaviour
         MoveObject(woodThree2_1, "moveWoodThree2", 2f, 5f);
         MoveObject(woodThree2_2, "moveWoodThree2", 2f, 7f);
         //level3
+        MoveObject(gateOne3, "openGateOne3", 2f, 5f);
         MoveObject(woodTwo3, "moveWoodTwo3", 2f, 5f);
         MoveObject(woodThree3, "moveWoodThree3", 2f, 5f);
         MoveObject(woodFour3, "moveWoodFour3", 2f, 5f);
+        MoveObject(gateTwo3, "openGateTwo3", 2f, 5f);
+        MoveObject(gateThree3, "openGateThree3", 2f, 5f);
+        MoveObject(gateFour3, "openGateFour3", 2f, 5f);
 
     }
 
@@ -117,13 +129,29 @@ public class WorldActionsController : MonoBehaviour
 
     public void ResetGates()
     {
-        ResetGatePosition(gateOne);
+        //ResetGatePosition(gateOne);
         ResetGatePosition(gateTwo);
         ResetGatePosition(gateThree);
         ResetGatePosition(gateFour);
         ResetGatePosition(gateFive);
         ResetGatePosition(gateSix);
         ResetGatePosition(finalGateOne);
+        //level2
+        ResetGatePosition(gateOne2);
+        ResetGatePosition(gateTwo2);
+        ResetGatePosition(woodOne2);
+        ResetGatePosition(woodTwo2);
+        ResetGatePosition(woodThree2_1);
+        ResetGatePosition(woodThree2_2);
+        //level3
+        ResetGatePosition(woodTwo3);
+        ResetGatePosition(woodThree3);
+        ResetGatePosition(woodFour3);
+        //ResetGatePosition(gateOne3);
+        ResetGatePosition(gateTwo3);
+        ResetGatePosition(gateThree3);
+        ResetGatePosition(gateFour3);
+
     }
 
     private void ResetGatePosition(Transform gate)

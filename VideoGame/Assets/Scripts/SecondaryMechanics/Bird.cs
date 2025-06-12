@@ -15,6 +15,8 @@ public class Bird : MonoBehaviour
     private Vector2 initialPosition;
     private RigidbodyConstraints2D originalConstraints;
 
+    public static int birdCount = 0;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -72,6 +74,9 @@ public class Bird : MonoBehaviour
                 float sheepHeight = GetComponent<Collider2D>().bounds.extents.y;
                 transform.position = new Vector2(bottomPosition.x, bottomPosition.y + sheepHeight);
                 VariableManager.Instance.SetVariable("birdPosition", true);
+                //atualização da missão
+                birdCount = 1;
+                QuestsController.Instance?.UpdateQuestProgress("missionTwo", birdCount, 1);
             }
 
             rb.bodyType = RigidbodyType2D.Kinematic;

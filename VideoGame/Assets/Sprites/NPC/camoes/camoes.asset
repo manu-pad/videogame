@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce59d083571ff9a4d8d430eb76d3c318, type: 3}
+  m_Name: camoes
+  m_EditorClassIdentifier: 
+  npcName: 
+  npcPortrait: {fileID: 0}
+  dialogueLines:
+  - "Sauda\xE7\xF5es, viajante. Olha bem para mim... Sabes quem sou?\\n A minha pena
+    cantou mares e imp\xE9rios. N\xE3o te dou enigmas, s\xF3 te pergunto diretamente:
+    reconheces-me?"
+  - "Erraste. Talvez ainda nos encontremos nas p\xE1ginas certas."
+  - Acertaste! Vejo que reconheces rostos da nossa literatura.
+  autoProgressionLines: 
+  endDialogueLines: 000101
+  autoProgressionDelay: 1.5
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}
+  voicePitch: 1
+  lineFlags:
+  - dialogueLineIndex: 2
+    variableName: openGateTwo3
+    value: 1
+  choices:
+  - dialogueIndex: 0
+    choices:
+    - Gil Vicente
+    - "Lu\xEDs de Cam\xF5es"
+    - "S\xE1 de Miranda"
+    nextDialogueIndexes: 010000000200000001000000
+  resetDialogue: 1

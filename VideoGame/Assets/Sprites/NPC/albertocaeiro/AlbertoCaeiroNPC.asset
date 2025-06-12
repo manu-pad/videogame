@@ -43,6 +43,12 @@ MonoBehaviour:
   - dialogueLineIndex: 7
     variableName: fimAcerto
     value: 1
+  - dialogueLineIndex: 7
+    variableName: missionTwo
+    value: 1
+  - dialogueLineIndex: 6
+    variableName: missionTwo
+    value: 1
   choices:
   - dialogueIndex: 5
     choices:
@@ -50,3 +56,4 @@ MonoBehaviour:
     - A Chuva
     - "Um p\xE1ssaro"
     nextDialogueIndexes: 070000000600000006000000
+  resetDialogue: 0

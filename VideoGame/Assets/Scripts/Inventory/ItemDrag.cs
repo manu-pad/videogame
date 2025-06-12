@@ -129,8 +129,13 @@ public class ItemDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         Vector2 dropPosition = tableArea.bounds.center;
 
         // Instanciar o item na posição da mesa
-        Instantiate(gameObject, dropPosition, Quaternion.identity);
+        GameObject droppedItem = Instantiate(gameObject, dropPosition, Quaternion.identity);
 
+        BookInspect2 inspect2 = droppedItem.GetComponent<BookInspect2>();
+        if (inspect2 != null)
+        {
+            inspect2.SetInteractable(false); // Congela a interação
+        }
         // Destruir o item da UI
         Destroy(gameObject);
     }

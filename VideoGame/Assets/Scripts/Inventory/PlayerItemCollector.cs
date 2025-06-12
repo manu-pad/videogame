@@ -18,7 +18,13 @@ public class PlayerItemCollector : MonoBehaviour
 
     void Update()
     {
-        if(currentItem != null)
+        if (inventoryController.IsInventoryFull())
+        {
+            Debug.Log("Inventário cheio!");
+            return;
+        }
+
+        if (currentItem != null)
         {
             BookInspect inspect = currentItem.GetComponent<BookInspect>();
             bool isInspecting = inspect != null && inspect.IsInspectionActive();
@@ -40,6 +46,9 @@ public class PlayerItemCollector : MonoBehaviour
 
             if (!isInspecting && Input.GetKeyDown(KeyCode.E))
             {
+                var inspect2 = currentItem.GetComponent<BookInspect2>();
+                if (inspect2 != null && !inspect2.CanInteract())
+                    return;
                 bool itemAdded = inventoryController.AddItem(currentItem);
 
                 if (itemAdded)
@@ -47,7 +56,6 @@ public class PlayerItemCollector : MonoBehaviour
                     if (inspect != null)
                         inspect.HideInspection();
 
-                    var inspect2 = currentItem.GetComponent<BookInspect2>();
                     if (inspect2 != null)
                     {
                         inspect2.SetCollected(true); 

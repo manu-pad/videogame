@@ -56,10 +56,10 @@ public class NPC : MonoBehaviour, IInteractable
         dialogueUI.ShowDialogueUI(true);
         PauseController.SetPause(true);
 
-        if (inventoryController != null)
-        {
-            inventoryController.inventoryPanel.SetActive(false);
-        }
+        //if (inventoryController != null && inventoryController.gameObject.activeInHierarchy && isDialogueActive)
+        //{
+        //    inventoryController.inventoryPanel.SetActive(false);
+        //}
 
         DisplayCurrentLine();
     }
@@ -169,15 +169,18 @@ public class NPC : MonoBehaviour, IInteractable
         dialogueUI.ShowDialogueUI(false);
         PauseController.SetPause(false);
 
-        if (inventoryController != null)
-        {
-            inventoryController.inventoryPanel.SetActive(true);
-        }
-
+        //if (inventoryController != null && inventoryController.gameObject.activeInHierarchy)
+        //{
+        //    inventoryController.inventoryPanel.SetActive(true);
+        //}
     }
     public void ResetDialogues()
     {
-        finalDialogueEnd = false;
+        if (dialogueData.resetDialogue)
+        {
+            finalDialogueEnd = false;
+
+        }
     }
 
 

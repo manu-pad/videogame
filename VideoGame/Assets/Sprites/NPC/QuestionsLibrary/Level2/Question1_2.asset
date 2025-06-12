@@ -26,8 +26,8 @@ MonoBehaviour:
   voicePitch: 1
   lineFlags:
   - dialogueLineIndex: 2
-    variableName: open
-    value: 0
+    variableName: openGateTwo2
+    value: 1
   choices:
   - dialogueIndex: 0
     choices:
@@ -35,3 +35,4 @@ MonoBehaviour:
     - "Colonizar a \xCDndia"
     - Encontrar ouro
     nextDialogueIndexes: 020000000100000001000000
+  resetDialogue: 1

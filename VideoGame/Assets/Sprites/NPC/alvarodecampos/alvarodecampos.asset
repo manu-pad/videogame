@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce59d083571ff9a4d8d430eb76d3c318, type: 3}
+  m_Name: alvarodecampos
+  m_EditorClassIdentifier: 
+  npcName: "\xC1lvaro de Campos"
+  npcPortrait: {fileID: 0}
+  dialogueLines:
+  - "Essa m\xE1quina... n\xE3o funciona sem os livros.  "
+  - "S\xE3o tr\xEAs. Cada um em um ponto da f\xE1brica."
+  - "Ca\xEDram durante uma falha no sistema.  "
+  - "Sem eles, o portal n\xE3o abre. "
+  - "E sem o portal... todos os livros e suas palavras continuar\xE3o presos aqui."
+  - "Ache os livros. Traga-os de volta aos pedestais. S\xF3 assim a energia volta
+    a circular.  "
+  - "Aqui. Pegue isto. \xC9 uma bolsa resistente ao calor.\\nVai guardar os livros."
+  - "Eu ficarei aqui, mantendo o sistema est\xE1vel. V\xE1."
+  autoProgressionLines: 
+  endDialogueLines: 0000000000000001
+  autoProgressionDelay: 1.5
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}
+  voicePitch: 1
+  lineFlags:
+  - dialogueLineIndex: 7
+    variableName: openGateOne3
+    value: 1
+  - dialogueLineIndex: 7
+    variableName: inventoryActivate
+    value: 1
+  - dialogueLineIndex: 7
+    variableName: missionThree
+    value: 1
+  choices: []
+  resetDialogue: 0

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce59d083571ff9a4d8d430eb76d3c318, type: 3}
+  m_Name: FinalSpiritDialogue
+  m_EditorClassIdentifier: 
+  npcName: "Esp\xEDrito dos Livros"
+  npcPortrait: {fileID: 0}
+  dialogueLines:
+  - "Conseguiste. Recuperaste as hist\xF3rias. "
+  - 'Cada palavra, cada segredo, voltou a brilhar. '
+  - "O portal est\xE1 aberto.\\nPoder\xE1s voltar ao teu mundo."
+  - "Obrigado por devolveres a vida \xE0s hist\xF3rias portuguesas. "
+  - "Confie em mim. Juntos, traremos as hist\xF3rias de volta.\\nVai, e toma cuidado."
+  autoProgressionLines: 0100
+  endDialogueLines: 0000000001
+  autoProgressionDelay: 1.5
+  typingSpeed: 0.05
+  voiceSound: {fileID: 8300000, guid: 5d63276ff33ac0049a5dab69e3fa9e52, type: 3}
+  voicePitch: 1
+  lineFlags:
+  - dialogueLineIndex: 4
+    variableName: createPortal
+    value: 1
+  choices: []
+  resetDialogue: 0

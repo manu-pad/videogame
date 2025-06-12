@@ -30,7 +30,7 @@ public class StartMenuController : MonoBehaviour
         cutsceneImage2.SetActive(false);
 
         // Carregar a cena
-        SceneManager.LoadScene("SubLevel1");
+        SceneManager.LoadScene("Level2");
     }
 
     public void OnExitClick()

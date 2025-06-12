@@ -26,9 +26,12 @@ public class QuestsController : MonoBehaviour
 
     void Update()
     {
-        CheckAndActivateQuest("missionOne", BookInspect.booksInspectedCount1, 6);
+        CheckAndActivateQuest("missionOne", BookInspect.booksInspectedCount1, 7);
         //modelo novas missões
         // CheckAndActivateQuest("missionTwo", BookInspect.booksInspectedCount2, 8);
+        CheckAndActivateQuest("missionTwo", Bird.birdCount, 1);
+        CheckAndActivateQuest("missionThree", BookInspect2.booksInspectedCount2, 3);
+
     }
 
     private void CheckAndActivateQuest(string variableName, int collected, int total)
@@ -51,7 +54,22 @@ public class QuestsController : MonoBehaviour
 
         if (!previousCounts.ContainsKey(variableName) || previousCounts[variableName] != collected)
         {
-            SetQuest($"Encontre as anotações para abrir o portão e sair do Santuário\n {collected}/{total} coletados");
+            string message = "";
+
+            if (variableName == "missionOne")
+            {
+                message = $"Encontre as anotações para abrir o portão e sair do Santuário\n {collected}/{total} coletados";
+            }
+            else if (variableName == "missionTwo")
+            {
+                message = $"Traga o pássaro de volta a Alberto Caeiro\n {collected}/{total} entregue(s)";
+            }
+            else if (variableName == "missionThree")
+            {
+                message = $"Traga os 3 livros de volta aos pedestais.\nInspecione os quadros para descobrir a ordem correta e arraste cada livro até seu lugar.\n{collected}/{total} coletados";
+            }
+
+            SetQuest(message);
             previousCounts[variableName] = collected;
 
             if (!dicasAtualizadas.Contains(variableName))
@@ -61,6 +79,7 @@ public class QuestsController : MonoBehaviour
             }
         }
     }
+
 
     public void SetQuest(string mensagem)
     {

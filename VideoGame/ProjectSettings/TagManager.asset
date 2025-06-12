@@ -13,6 +13,7 @@ TagManager:
   - Water
   - Spike
   - Lava
+  - FallingBlock
   layers:
   - Default
   - TransparentFX

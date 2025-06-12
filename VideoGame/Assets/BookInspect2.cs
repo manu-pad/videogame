@@ -9,6 +9,9 @@ public class BookInspect2 : MonoBehaviour, IInteractable
     private Vector2 initialPosition; 
     private bool isCollected = false;
 
+    public static int booksInspectedCount2 = 0;
+
+
     void Start()
     {
         initialPosition = transform.position;
@@ -44,6 +47,9 @@ public class BookInspect2 : MonoBehaviour, IInteractable
     public void SetCollected(bool value)
     {
         isCollected = value;
+        booksInspectedCount2++;
+        //atualiza a função da quest cada vez que o valor do livro atualiza
+        QuestsController.Instance?.UpdateQuestProgress("missionThree", booksInspectedCount2, 3);
     }
 
 }

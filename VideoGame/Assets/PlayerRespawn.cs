@@ -70,8 +70,19 @@ public class PlayerRespawn : MonoBehaviour
 
         FindObjectOfType<WorldActionsController>()?.ResetGates();
 
+        //resetação dos bookinspect1
         //resetar textos lidos
         InspectionManager.Instance?.ResetReadTexts();
-
+        //resetar o UI
+        var libraryUI = FindObjectOfType<TextLibraryUI>();
+        if (libraryUI != null)
+        {
+            libraryUI.ShowLibrary(); // ou libraryUI.PopulateLibrary();
+        }
+        //resetar variável da missão
+        BookInspect.booksInspectedCount1 = 0;
+        QuestsController.Instance?.UpdateQuestProgress("missionOne", BookInspect.booksInspectedCount1, 7);
+        BookInspect2.booksInspectedCount2 = 0;
+        QuestsController.Instance?.UpdateQuestProgress("missionThree", BookInspect2.booksInspectedCount2, 3);
     }
 }

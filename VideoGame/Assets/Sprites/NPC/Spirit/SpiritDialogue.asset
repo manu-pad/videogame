@@ -12,34 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce59d083571ff9a4d8d430eb76d3c318, type: 3}
   m_Name: SpiritDialogue
   m_EditorClassIdentifier: 
-  npcName: Livro
-  npcPortrait: {fileID: -7527145504033472756, guid: 097df7819a294864c86179830074b88f, type: 3}
+  npcName: "Esp\xEDrito dos Livros"
+  npcPortrait: {fileID: 0}
   dialogueLines:
-  - "Ol\xE1! Sou o Livro! Ajudarei voc\xEA em sua miss\xE3o!"
-  - "Para come\xE7armos, voc\xEA deve primeiro ler este livro, para entender como
-    se comportar aqui"
-  - "O que voc\xEA gostaria de saber?"
-  - "Voc\xEA est\xE1 na minha Biblioteca! A maior e melhor do pa\xEDs!"
-  - "Sou o Livro! Sou o respons\xE1vel por guardar todas as hist\xF3rias portuguesas"
-  - "Voc\xEA precisar\xE1 me ajudar a resolver uma s\xE9rie de problemas aqui na
-    biblioteca e dentro dos livros!"
+  - "Eu sou o livro guardi\xE3o das hist\xF3rias portuguesas.\\nPreciso da tua ajuda
+    para atravessar os cap\xEDtulos. "
+  - "Cada cap\xEDtulo traz perguntas e desafios. "
+  - "Tu ser\xE1s interrogado por perguntas.\\nDeves relembrar as hist\xF3rias para
+    restaurar os livros no mundo. "
+  - 'Mas cuidado! Inimigos tentam impedir o teu progresso.  '
+  - "Est\xE1s no meu santu\xE1rio agora.\\nPara sair, deves recolher as minhas anota\xE7\xF5es
+    espalhadas.\\nCom elas, resolver\xE1s a charada final. "
+  - "Confie em mim. Juntos, traremos as hist\xF3rias de volta.\\nVai, e toma cuidado."
   autoProgressionLines: 0100
-  endDialogueLines: 000000010101
+  endDialogueLines: 000000000001
   autoProgressionDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 8300000, guid: 5d63276ff33ac0049a5dab69e3fa9e52, type: 3}
   voicePitch: 1
   lineFlags:
-  - dialogueLineIndex: 4
+  - dialogueLineIndex: 5
     variableName: openGateOne
     value: 1
-  - dialogueLineIndex: 4
+  - dialogueLineIndex: 5
     variableName: missionOne
     value: 1
-  choices:
-  - dialogueIndex: 2
-    choices:
-    - Onde estou?
-    - "O que \xE9 voc\xEA?"
-    - O que preciso fazer?
-    nextDialogueIndexes: 030000000400000005000000
+  choices: []
+  resetDialogue: 0
