@@ -32,7 +32,7 @@ public class TextLibraryUI : MonoBehaviour
 
     void PopulateLibrary()
     {
-        Debug.Log("Entrou em PopulateLibrary()");
+        //Debug.Log("Entrou em PopulateLibrary()");
 
         foreach (Transform child in buttonContainer)
         {
@@ -47,11 +47,11 @@ public class TextLibraryUI : MonoBehaviour
             return;
         }
 
-        Debug.Log($"Número de textos lidos: {readTexts.Count}");
+        //Debug.Log($"Número de textos lidos: {readTexts.Count}");
 
         foreach (var entry in readTexts)
         {
-            Debug.Log($"Criando botão para: {entry.title}");
+            //Debug.Log($"Criando botão para: {entry.title}");
 
             GameObject buttonObject = Instantiate(buttonPrefab, buttonContainer);
 
@@ -61,12 +61,12 @@ public class TextLibraryUI : MonoBehaviour
 
             if (textComponent == null || buttonComponent == null)
             {
-                Debug.LogError("TextMeshProUGUI ou Button não encontrado no prefab!");
+                //Debug.LogError("TextMeshProUGUI ou Button não encontrado no prefab!");
                 continue;
             }
 
             textComponent.text = entry.title;
-            Debug.Log($"Texto atribuído ao botão: {entry.title}");  // Aqui é para verificar no console
+            //Debug.Log($"Texto atribuído ao botão: {entry.title}");  // Aqui é para verificar no console
 
 
             var capturedEntry = entry;
@@ -80,7 +80,7 @@ public class TextLibraryUI : MonoBehaviour
 
     void ShowTextDetails(InspectionTextsDatabase.InspectionTextEntry entry)
     {
-        Debug.Log($"Mostrando detalhes para: {entry.title}");
+        //Debug.Log($"Mostrando detalhes para: {entry.title}");
         if (libraryInspectionPanel != null && libraryInspectionText != null)
         {
             libraryInspectionPanel.SetActive(true);
@@ -88,7 +88,7 @@ public class TextLibraryUI : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Painel de inspeção da biblioteca ou texto não atribuído!");
+            //Debug.LogError("Painel de inspeção da biblioteca ou texto não atribuído!");
         }
     }
 

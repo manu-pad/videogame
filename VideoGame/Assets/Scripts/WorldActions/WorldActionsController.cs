@@ -27,7 +27,10 @@ public class WorldActionsController : MonoBehaviour
     public Transform woodFour3;
     public Transform gateTwo3; 
     public Transform gateThree3; 
-    public Transform gateFour3; 
+    public Transform gateFour3;
+    public GameObject spiritNPC;
+    public Transform finalPortal;
+
 
     private Dictionary<Transform, float> initialHeights = new Dictionary<Transform, float>();
 
@@ -86,7 +89,12 @@ public class WorldActionsController : MonoBehaviour
         MoveObject(gateTwo3, "openGateTwo3", 2f, 5f);
         MoveObject(gateThree3, "openGateThree3", 2f, 5f);
         MoveObject(gateFour3, "openGateFour3", 2f, 5f);
-
+        if (ItemDrag.booksPlaced == 3)
+        {
+            ShowObjectGame(spiritNPC);
+        }
+        ActivateObject(finalPortal, "createPortal");
+        
     }
 
     void MoveObject(Transform gate, string variableName, float speed, float moveAmount)
@@ -111,7 +119,7 @@ public class WorldActionsController : MonoBehaviour
     }
 
 
-    //ativa os objetos 
+    //ativa os objetos através do VariableManager
     void ActivateObject(Transform obj, string variableName)
     {
         if (VariableManager.Instance.GetVariable(variableName))
@@ -122,6 +130,15 @@ public class WorldActionsController : MonoBehaviour
             }
 
             VariableManager.Instance.SetVariable(variableName, false);
+        }
+    }
+
+    //ativa objetos normal
+    public void ShowObjectGame(GameObject obj)
+    {
+        if (obj != null && !obj.activeSelf)
+        {
+            obj.SetActive(true);
         }
     }
 

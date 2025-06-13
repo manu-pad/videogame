@@ -17,9 +17,8 @@ MonoBehaviour:
   dialogueLines:
   - "Conseguiste. Recuperaste as hist\xF3rias. "
   - 'Cada palavra, cada segredo, voltou a brilhar. '
-  - "O portal est\xE1 aberto.\\nPoder\xE1s voltar ao teu mundo."
   - "Obrigado por devolveres a vida \xE0s hist\xF3rias portuguesas. "
-  - "Confie em mim. Juntos, traremos as hist\xF3rias de volta.\\nVai, e toma cuidado."
+  - "O portal est\xE1 aberto.\\nPoder\xE1s voltar ao teu mundo."
   autoProgressionLines: 0100
   endDialogueLines: 0000000001
   autoProgressionDelay: 1.5
@@ -27,7 +26,7 @@ MonoBehaviour:
   voiceSound: {fileID: 8300000, guid: 5d63276ff33ac0049a5dab69e3fa9e52, type: 3}
   voicePitch: 1
   lineFlags:
-  - dialogueLineIndex: 4
+  - dialogueLineIndex: 3
     variableName: createPortal
     value: 1
   choices: []

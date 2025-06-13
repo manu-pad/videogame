@@ -47,7 +47,7 @@ public class BookInspect : MonoBehaviour
                     InspectionManager.Instance?.RegisterReadText(entry);
                     booksInspectedCount1++;
                     //atualiza a função da quest cada vez que o valor do livro atualiza
-                    QuestsController.Instance?.UpdateQuestProgress("missionOne", booksInspectedCount1, 7);
+                    QuestsController.Instance?.UpdateQuestProgress("missionOne", booksInspectedCount1, 6);
                 }
                 wasRead = true;
 

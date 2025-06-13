@@ -8,7 +8,7 @@ public class ItemDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     private CanvasGroup canvasGroup;
 
     public Collider2D tableArea; // Área da mesa
-
+    public static int booksPlaced = 0; // é compartilhada por todos
 
     private void Awake()
     {
@@ -130,7 +130,8 @@ public class ItemDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 
         // Instanciar o item na posição da mesa
         GameObject droppedItem = Instantiate(gameObject, dropPosition, Quaternion.identity);
-
+        booksPlaced++;
+        Debug.Log($"Livro colocado na mesa. {booksPlaced}");
         BookInspect2 inspect2 = droppedItem.GetComponent<BookInspect2>();
         if (inspect2 != null)
         {

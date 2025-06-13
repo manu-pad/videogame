@@ -23,16 +23,16 @@ public class ElevatorPlatform : MonoBehaviour
 
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
 
-        if (Vector3.Distance(transform.position, targetPosition) < 0.01f)
+        if (Vector3.Distance(transform.position, targetPosition) < 0.1f)
         {
             isMoving = false;
-            atPointA = !atPointA; // Alterna o ponto atual
+            atPointA = !atPointA;
         }
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
-        if (collision.collider.CompareTag(playerTag) && !isMoving)
+        if (other.CompareTag(playerTag) && !isMoving)
         {
             Debug.Log("Jogador ativou o elevador!");
 

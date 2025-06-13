@@ -81,7 +81,7 @@ public class PlayerRespawn : MonoBehaviour
         }
         //resetar variável da missão
         BookInspect.booksInspectedCount1 = 0;
-        QuestsController.Instance?.UpdateQuestProgress("missionOne", BookInspect.booksInspectedCount1, 7);
+        QuestsController.Instance?.UpdateQuestProgress("missionOne", BookInspect.booksInspectedCount1, 6);
         BookInspect2.booksInspectedCount2 = 0;
         QuestsController.Instance?.UpdateQuestProgress("missionThree", BookInspect2.booksInspectedCount2, 3);
     }

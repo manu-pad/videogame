@@ -27,6 +27,11 @@ public class InventoryController : MonoBehaviour
     {
         bool isActive = VariableManager.Instance.GetVariable("inventoryActivate");
         inventoryPanel.SetActive(isActive);
+        if(ItemDrag.booksPlaced == 3)
+        {
+            inventoryPanel.SetActive(false); // Esconde o inventário se 3 livros foram colocados
+            VariableManager.Instance.SetVariable("inventoryActivate", false); // Desativa a variável de ativação do inventário
+        }
     }
 
     public bool AddItem(GameObject itemPrefab)

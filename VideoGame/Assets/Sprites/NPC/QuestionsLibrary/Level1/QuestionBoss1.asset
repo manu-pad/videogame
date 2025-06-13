@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce59d083571ff9a4d8d430eb76d3c318, type: 3}
   m_Name: QuestionBoss1
   m_EditorClassIdentifier: 
-  npcName: 
+  npcName: Ricardo Reis
   npcPortrait: {fileID: 0}
   dialogueLines:
+  - " Sa\xFAdo-te com serena raz\xE3o, sou o poeta do equil\xEDbrio e do destino.\\nAntes
+    que prossigas, responde-me:"
   - O primeiro homem da estrada
   - O segundo homem da estrada
   - O segundo homem da estrada
@@ -23,43 +25,44 @@ MonoBehaviour:
   - Tente Novamente
   - Correto! Pode prosseguir
   autoProgressionLines: 
-  endDialogueLines: 
+  endDialogueLines: 0000000000000101
   autoProgressionDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 0}
   voicePitch: 1
   lineFlags:
-  - dialogueLineIndex: 6
+  - dialogueLineIndex: 7
     variableName: finalGateOne
     value: 1
   choices:
-  - dialogueIndex: 0
+  - dialogueIndex: 1
     choices:
     - Remora
     - Roncador
     - Torpedo
-    nextDialogueIndexes: 020000000100000001000000
-  - dialogueIndex: 1
-    choices:
-    - Quatro-olhos
-    - Peixe de Tobias
-    - Pegador
-    nextDialogueIndexes: 030000000300000003000000
+    nextDialogueIndexes: 030000000200000002000000
   - dialogueIndex: 2
     choices:
     - Quatro-olhos
     - Peixe de Tobias
     - Pegador
-    nextDialogueIndexes: 030000000400000003000000
+    nextDialogueIndexes: 040000000400000004000000
   - dialogueIndex: 3
     choices:
-    - Voador
-    - Voga
-    - Dourado
-    nextDialogueIndexes: 050000000500000005000000
+    - Quatro-olhos
+    - Peixe de Tobias
+    - Pegador
+    nextDialogueIndexes: 040000000500000004000000
   - dialogueIndex: 4
     choices:
     - Voador
     - Voga
     - Dourado
-    nextDialogueIndexes: 060000000500000005000000
+    nextDialogueIndexes: 060000000600000006000000
+  - dialogueIndex: 5
+    choices:
+    - Voador
+    - Voga
+    - Dourado
+    nextDialogueIndexes: 070000000600000006000000
+  resetDialogue: 1

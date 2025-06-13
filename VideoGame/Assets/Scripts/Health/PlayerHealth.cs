@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public float maxHealth = 3f;
+    public float maxHealth = 10f;
     private float currentHealth;
     private bool invulnerable = false;
 

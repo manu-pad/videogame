@@ -26,7 +26,7 @@ public class QuestsController : MonoBehaviour
 
     void Update()
     {
-        CheckAndActivateQuest("missionOne", BookInspect.booksInspectedCount1, 7);
+        CheckAndActivateQuest("missionOne", BookInspect.booksInspectedCount1, 6);
         //modelo novas missões
         // CheckAndActivateQuest("missionTwo", BookInspect.booksInspectedCount2, 8);
         CheckAndActivateQuest("missionTwo", Bird.birdCount, 1);
