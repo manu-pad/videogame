@@ -20,10 +20,10 @@ MonoBehaviour:
   - "Ca\xEDram durante uma falha no sistema.  "
   - "Sem eles, o portal n\xE3o abre. "
   - "E sem o portal... todos os livros e suas palavras continuar\xE3o presos aqui."
-  - "Ache os livros. Traga-os de volta aos pedestais. S\xF3 assim a energia volta
+  - "Ache os livros. Leve-os de volta aos pedestais. S\xF3 assim a energia volta
     a circular.  "
   - "Aqui. Pegue isto. \xC9 uma bolsa resistente ao calor.\\nVai guardar os livros."
-  - "Eu ficarei aqui, mantendo o sistema est\xE1vel. V\xE1."
+  - "Nos encontraremos na sala de m\xE1quinas. V\xE1."
   autoProgressionLines: 
   endDialogueLines: 0000000000000001
   autoProgressionDelay: 1.5

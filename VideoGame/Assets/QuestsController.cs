@@ -62,7 +62,7 @@ public class QuestsController : MonoBehaviour
             }
             else if (variableName == "missionTwo")
             {
-                message = $"Traga o pássaro de volta a Alberto Caeiro\n {collected}/{total} entregue(s)";
+                message = $"Traga o pássaro de volta a Alberto Caeiro\n {collected}/{total}";
             }
             else if (variableName == "missionThree")
             {

@@ -56,4 +56,4 @@ MonoBehaviour:
     - A Chuva
     - "Um p\xE1ssaro"
     nextDialogueIndexes: 070000000600000006000000
-  resetDialogue: 0
+  resetDialogue: 1

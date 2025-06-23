@@ -15,7 +15,8 @@ MonoBehaviour:
   npcName: 
   npcPortrait: {fileID: 0}
   dialogueLines:
-  - Pergunta1
+  - "Qual obra de Jos\xE9 Saramago apresenta a situa\xE7\xE3o de um pa\xEDs inteiro
+    atingido por uma cegueira branca?"
   - "N\xE3o me parece..."
   - Correto!
   autoProgressionLines: 
@@ -31,7 +32,8 @@ MonoBehaviour:
   choices:
   - dialogueIndex: 0
     choices:
-    - Certa
-    - Errada
-    - Errada
-    nextDialogueIndexes: 020000000100000001000000
+    - O Evangelho Segundo Jesus Cristo
+    - Ensaio sobre a Cegueira
+    - Memorial do Convento
+    nextDialogueIndexes: 010000000200000001000000
+  resetDialogue: 1

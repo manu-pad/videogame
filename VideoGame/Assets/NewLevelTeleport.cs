@@ -57,7 +57,7 @@ public class NewLevelTeleport : MonoBehaviour
 
         }
 
-
+        
         // Fade Out (tela preta)
         yield return StartCoroutine(FadeCanvasGroup(fadeCanvasGroup, 1f, 0f));
         fadeCanvasGroup.gameObject.SetActive(false);

@@ -65,7 +65,7 @@ public class Enemy : MonoBehaviour
 
         if (currentHits >= lifePoints)
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
         else
         {
@@ -97,6 +97,7 @@ public class Enemy : MonoBehaviour
 
     public void ResetEnemy()
     {
+        gameObject.SetActive(true);
         transform.position = initialPosition; 
         lifePoints = maxLifePoints;  
         currentHits = 0; 

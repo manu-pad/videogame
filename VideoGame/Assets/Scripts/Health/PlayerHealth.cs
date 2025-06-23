@@ -27,10 +27,14 @@ public class PlayerHealth : MonoBehaviour
     void Update()
     {
         //para testes, remover depois
-        if (Input.GetKeyDown(KeyCode.Y))
-        {
-            TakeDamage(1f);
-        }
+        //if (Input.GetKeyDown(KeyCode.Y))
+        //{
+        //    TakeDamage(1f);
+        //}
+        //if (Input.GetKeyDown(KeyCode.U))
+        //{
+        //    GainHealth(1f);
+        //}
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
@@ -40,7 +44,7 @@ public class PlayerHealth : MonoBehaviour
             if (currentHealth < maxHealth)
             {
                 GainHealth(0.5f);
-                Destroy(collider.gameObject);
+                collider.gameObject.SetActive(false);
                 Debug.Log("Vida aumentada para: " + currentHealth);
             }
             else

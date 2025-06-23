@@ -46,7 +46,7 @@ public class WorldActionsController : MonoBehaviour
         initialHeights[finalGateOne] = finalGateOne.position.y;
         //level2
         initialHeights[gateOne2] = gateOne2.position.y;
-        initialHeights[gateOne2] = gateTwo2.position.y;
+        initialHeights[gateTwo2] = gateTwo2.position.y;
         initialHeights[woodOne2] = woodOne2.position.y;
         initialHeights[woodTwo2] = woodTwo2.position.y;
         initialHeights[woodThree2_1] = woodThree2_1.position.y;

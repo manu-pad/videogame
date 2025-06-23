@@ -1,0 +1,1924 @@
+fileFormatVersion: 2
+guid: 9859ba76f59585a4f9666f109ad0acb6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1607562329155744904
+    second: arrastar-28-28_0
+  - first:
+      213: -7604749807141633484
+    second: arrastar-28-28_1
+  - first:
+      213: 7033880711905707755
+    second: arrastar-28-28_2
+  - first:
+      213: 4074330608591197882
+    second: arrastar-28-28_3
+  - first:
+      213: -9024718817111198801
+    second: arrastar-28-28_4
+  - first:
+      213: -3451746005207921578
+    second: arrastar-28-28_5
+  - first:
+      213: 7882700616791963221
+    second: arrastar-28-28_6
+  - first:
+      213: -2273772189506427693
+    second: arrastar-28-28_7
+  - first:
+      213: -9124194071435324807
+    second: arrastar-28-28_8
+  - first:
+      213: -2361964186482029621
+    second: arrastar-28-28_9
+  - first:
+      213: -3457118672104423461
+    second: arrastar-28-28_10
+  - first:
+      213: -7920311728255150374
+    second: arrastar-28-28_11
+  - first:
+      213: -3351419995809799090
+    second: arrastar-28-28_12
+  - first:
+      213: -1210845934749511783
+    second: arrastar-28-28_13
+  - first:
+      213: 6959013579647800163
+    second: arrastar-28-28_14
+  - first:
+      213: 5238484751798125720
+    second: arrastar-28-28_15
+  - first:
+      213: 6536240616155909409
+    second: arrastar-28-28_16
+  - first:
+      213: -6156615707901788457
+    second: arrastar-28-28_17
+  - first:
+      213: 3248566348475445720
+    second: arrastar-28-28_18
+  - first:
+      213: 7349018234295123790
+    second: arrastar-28-28_19
+  - first:
+      213: -2698090152788253283
+    second: arrastar-28-28_20
+  - first:
+      213: 8411411004193815489
+    second: arrastar-28-28_21
+  - first:
+      213: 6775015315302263885
+    second: arrastar-28-28_22
+  - first:
+      213: 1403189401205097388
+    second: arrastar-28-28_23
+  - first:
+      213: -8406521994971246354
+    second: arrastar-28-28_24
+  - first:
+      213: -7462538115605802412
+    second: arrastar-28-28_25
+  - first:
+      213: 4174731123126813792
+    second: arrastar-28-28_26
+  - first:
+      213: 1394693376019693035
+    second: arrastar-28-28_27
+  - first:
+      213: -916326966620560505
+    second: arrastar-28-28_28
+  - first:
+      213: -1096648912289655997
+    second: arrastar-28-28_29
+  - first:
+      213: -2870428729618057931
+    second: arrastar-28-28_30
+  - first:
+      213: -672856014235923055
+    second: arrastar-28-28_31
+  - first:
+      213: -1598135545456885763
+    second: arrastar-28-28_32
+  - first:
+      213: -2971487730150333875
+    second: arrastar-28-28_33
+  - first:
+      213: 8109467701810224642
+    second: arrastar-28-28_34
+  - first:
+      213: -4910386067891250410
+    second: arrastar-28-28_35
+  - first:
+      213: -2235129896427066141
+    second: arrastar-28-28_36
+  - first:
+      213: 3172978203122340612
+    second: arrastar-28-28_37
+  - first:
+      213: -2705679205485576018
+    second: arrastar-28-28_38
+  - first:
+      213: 5057582082398537424
+    second: arrastar-28-28_39
+  - first:
+      213: -2965242434580485315
+    second: arrastar-28-28_40
+  - first:
+      213: -7786225520496926325
+    second: arrastar-28-28_41
+  - first:
+      213: -3071090744340698837
+    second: arrastar-28-28_42
+  - first:
+      213: 7789900945386043701
+    second: arrastar-28-28_43
+  - first:
+      213: 6903019913937556009
+    second: arrastar-28-28_44
+  - first:
+      213: 3736215049467155403
+    second: arrastar-28-28_45
+  - first:
+      213: -1100564139136752455
+    second: arrastar-28-28_46
+  - first:
+      213: -8081640119475952699
+    second: arrastar-28-28_47
+  - first:
+      213: 2852965555335031305
+    second: arrastar-28-28_48
+  - first:
+      213: 5637319981369451900
+    second: arrastar-28-28_49
+  - first:
+      213: 6236080419002237001
+    second: arrastar-28-28_50
+  - first:
+      213: -5006703437314990272
+    second: arrastar-28-28_51
+  - first:
+      213: -6094989942063708039
+    second: arrastar-28-28_52
+  - first:
+      213: -3631895158388410763
+    second: arrastar-28-28_53
+  - first:
+      213: 6783191204146928105
+    second: arrastar-28-28_54
+  - first:
+      213: -6927946629452658965
+    second: arrastar-28-28_55
+  - first:
+      213: -7562996468847966335
+    second: arrastar-28-28_56
+  - first:
+      213: -5047778584670804639
+    second: arrastar-28-28_57
+  - first:
+      213: 3391596551367811341
+    second: arrastar-28-28_58
+  - first:
+      213: 7624937831645674715
+    second: arrastar-28-28_59
+  - first:
+      213: -3355272897035466017
+    second: arrastar-28-28_60
+  - first:
+      213: 7418872178660995970
+    second: arrastar-28-28_61
+  - first:
+      213: -2468357215800388434
+    second: arrastar-28-28_62
+  - first:
+      213: 621795429840082286
+    second: arrastar-28-28_63
+  - first:
+      213: 686902082170732108
+    second: arrastar-28-28_64
+  - first:
+      213: -1021715091753272345
+    second: arrastar-28-28_65
+  - first:
+      213: 5207624669056812440
+    second: arrastar-28-28_66
+  - first:
+      213: -3535236770066113098
+    second: arrastar-28-28_67
+  - first:
+      213: 4848940860016177405
+    second: arrastar-28-28_68
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: arrastar-28-28_0
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 346
+        width: 91
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 884b0afcb653f4610800000000000000
+      internalID: 1607562329155744904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_1
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 305
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4324a939750867690800000000000000
+      internalID: -7604749807141633484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_2
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 281
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be68c998d3d5d9160800000000000000
+      internalID: 7033880711905707755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_3
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 283
+        width: 24
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab6549e0a1eea8830800000000000000
+      internalID: 4074330608591197882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_4
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 277
+        width: 24
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa3bd440d02c1c280800000000000000
+      internalID: -9024718817111198801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_5
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 280
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65c45b0eb4fe810d0800000000000000
+      internalID: -3451746005207921578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_6
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 250
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55633a6527af46d60800000000000000
+      internalID: 7882700616791963221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_7
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 209
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d4ae489d30f170e0800000000000000
+      internalID: -2273772189506427693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_8
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 205
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9725f5685d9506180800000000000000
+      internalID: -9124194071435324807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_9
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 205
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcb4b8c261e983fd0800000000000000
+      internalID: -2361964186482029621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_10
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 205
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdf78d262e8d500d0800000000000000
+      internalID: -3457118672104423461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_11
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 205
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad6ddfe5276651290800000000000000
+      internalID: -7920311728255150374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_12
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 205
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e44ad98354d5d71d0800000000000000
+      internalID: -3351419995809799090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_13
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 205
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99f8785a906323fe0800000000000000
+      internalID: -1210845934749511783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_14
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 205
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 363d602faf1639060800000000000000
+      internalID: 6959013579647800163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_15
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 205
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8944a388026d2b840800000000000000
+      internalID: 5238484751798125720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_16
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 200
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12d047cb53465ba50800000000000000
+      internalID: 6536240616155909409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_17
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 205
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7de7ceff1ae4f8aa0800000000000000
+      internalID: -6156615707901788457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_18
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 205
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d1ba2ed1e9351d20800000000000000
+      internalID: 3248566348475445720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_19
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 205
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4f7707b525fcf560800000000000000
+      internalID: 7349018234295123790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_20
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 205
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d95a3171d457e8ad0800000000000000
+      internalID: -2698090152788253283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_21
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 205
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cbb8c42eb55bb470800000000000000
+      internalID: 8411411004193815489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_22
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 205
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4c2c60a880b50e50800000000000000
+      internalID: 6775015315302263885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_23
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 205
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca34c637351297310800000000000000
+      internalID: 1403189401205097388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_24
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 205
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee01b3509c8065b80800000000000000
+      internalID: -8406521994971246354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_25
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 205
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 452d0804f1dbf6890800000000000000
+      internalID: -7462538115605802412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_26
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 205
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 064cdba76df9fe930800000000000000
+      internalID: 4174731123126813792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_27
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 205
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bed7e307c32fa5310800000000000000
+      internalID: 1394693376019693035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_28
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 205
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78368709a7d8843f0800000000000000
+      internalID: -916326966620560505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_29
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 205
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34318a3ef9be7c0f0800000000000000
+      internalID: -1096648912289655997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_30
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 98
+        width: 107
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5353a0257403a28d0800000000000000
+      internalID: -2870428729618057931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_31
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 175
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19d8b7e150989a6f0800000000000000
+      internalID: -672856014235923055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_32
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 175
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfffd1e403842d9e0800000000000000
+      internalID: -1598135545456885763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_33
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 175
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4225fd27a723c6d0800000000000000
+      internalID: -2971487730150333875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_34
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 175
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20ed6e3b8ed9a8070800000000000000
+      internalID: 8109467701810224642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_35
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 175
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61b905933edcadbb0800000000000000
+      internalID: -4910386067891250410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_36
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 175
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eceb9093393bf0e0800000000000000
+      internalID: -2235129896427066141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_37
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 175
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4031a255ddea80c20800000000000000
+      internalID: 3172978203122340612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_38
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 175
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea00fd0191f737ad0800000000000000
+      internalID: -2705679205485576018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_39
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 175
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d6ceb39b14203640800000000000000
+      internalID: 5057582082398537424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_40
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 175
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3b6aed57b759d6d0800000000000000
+      internalID: -2965242434580485315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_41
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 175
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8123bd6425c1f390800000000000000
+      internalID: -7786225520496926325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_42
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 175
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2925964d3b4165d0800000000000000
+      internalID: -3071090744340698837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_43
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 175
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 539f63d13a94b1c60800000000000000
+      internalID: 7789900945386043701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_44
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 191
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92212b7b9047ccf50800000000000000
+      internalID: 6903019913937556009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_45
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 175
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc355fbcac3b9d330800000000000000
+      internalID: 3736215049467155403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_46
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 175
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b4683a1fb20ab0f0800000000000000
+      internalID: -1100564139136752455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_47
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 140
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c32714312f38df80800000000000000
+      internalID: -8081640119475952699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_48
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 145
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90a6b229e05c79720800000000000000
+      internalID: 2852965555335031305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_49
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 145
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c75ecbeb7a8cb3e40800000000000000
+      internalID: 5637319981369451900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_50
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 145
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 940c565d9120b8650800000000000000
+      internalID: 6236080419002237001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_51
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 145
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04fdc1b10cd948ab0800000000000000
+      internalID: -5006703437314990272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_52
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 145
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 978c6b9b0fe3a6ba0800000000000000
+      internalID: -6094989942063708039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_53
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 145
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5763cc6989ae89dc0800000000000000
+      internalID: -3631895158388410763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_54
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 145
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e95bb6167cb22e50800000000000000
+      internalID: 6783191204146928105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_55
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 145
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be60c901f3dfadf90800000000000000
+      internalID: -6927946629452658965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_56
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 145
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18788c438c6da0790800000000000000
+      internalID: -7562996468847966335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_57
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 145
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1656fdb1f10b2f9b0800000000000000
+      internalID: -5047778584670804639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_58
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 140
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d01e7b1181f511f20800000000000000
+      internalID: 3391596551367811341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_59
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 145
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdc7da92f8831d960800000000000000
+      internalID: 7624937831645674715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_60
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 145
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fda84bfb31daf61d0800000000000000
+      internalID: -3355272897035466017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_61
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 145
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 283fd1b80f025f660800000000000000
+      internalID: 7418872178660995970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_62
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 145
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea4127da032aebdd0800000000000000
+      internalID: -2468357215800388434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_63
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 140
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e65549626af01a800800000000000000
+      internalID: 621795429840082286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_64
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 145
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4e334bedcd588900800000000000000
+      internalID: 686902082170732108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_65
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 145
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ebf36e898322d1f0800000000000000
+      internalID: -1021715091753272345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_66
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 145
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89541ba9b03354840800000000000000
+      internalID: 5207624669056812440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_67
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 145
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bd5f4b53e050fec0800000000000000
+      internalID: -3535236770066113098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrastar-28-28_68
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 145
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df0342a7506ea4340800000000000000
+      internalID: 4848940860016177405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      arrastar-28-28_0: 1607562329155744904
+      arrastar-28-28_1: -7604749807141633484
+      arrastar-28-28_10: -3457118672104423461
+      arrastar-28-28_11: -7920311728255150374
+      arrastar-28-28_12: -3351419995809799090
+      arrastar-28-28_13: -1210845934749511783
+      arrastar-28-28_14: 6959013579647800163
+      arrastar-28-28_15: 5238484751798125720
+      arrastar-28-28_16: 6536240616155909409
+      arrastar-28-28_17: -6156615707901788457
+      arrastar-28-28_18: 3248566348475445720
+      arrastar-28-28_19: 7349018234295123790
+      arrastar-28-28_2: 7033880711905707755
+      arrastar-28-28_20: -2698090152788253283
+      arrastar-28-28_21: 8411411004193815489
+      arrastar-28-28_22: 6775015315302263885
+      arrastar-28-28_23: 1403189401205097388
+      arrastar-28-28_24: -8406521994971246354
+      arrastar-28-28_25: -7462538115605802412
+      arrastar-28-28_26: 4174731123126813792
+      arrastar-28-28_27: 1394693376019693035
+      arrastar-28-28_28: -916326966620560505
+      arrastar-28-28_29: -1096648912289655997
+      arrastar-28-28_3: 4074330608591197882
+      arrastar-28-28_30: -2870428729618057931
+      arrastar-28-28_31: -672856014235923055
+      arrastar-28-28_32: -1598135545456885763
+      arrastar-28-28_33: -2971487730150333875
+      arrastar-28-28_34: 8109467701810224642
+      arrastar-28-28_35: -4910386067891250410
+      arrastar-28-28_36: -2235129896427066141
+      arrastar-28-28_37: 3172978203122340612
+      arrastar-28-28_38: -2705679205485576018
+      arrastar-28-28_39: 5057582082398537424
+      arrastar-28-28_4: -9024718817111198801
+      arrastar-28-28_40: -2965242434580485315
+      arrastar-28-28_41: -7786225520496926325
+      arrastar-28-28_42: -3071090744340698837
+      arrastar-28-28_43: 7789900945386043701
+      arrastar-28-28_44: 6903019913937556009
+      arrastar-28-28_45: 3736215049467155403
+      arrastar-28-28_46: -1100564139136752455
+      arrastar-28-28_47: -8081640119475952699
+      arrastar-28-28_48: 2852965555335031305
+      arrastar-28-28_49: 5637319981369451900
+      arrastar-28-28_5: -3451746005207921578
+      arrastar-28-28_50: 6236080419002237001
+      arrastar-28-28_51: -5006703437314990272
+      arrastar-28-28_52: -6094989942063708039
+      arrastar-28-28_53: -3631895158388410763
+      arrastar-28-28_54: 6783191204146928105
+      arrastar-28-28_55: -6927946629452658965
+      arrastar-28-28_56: -7562996468847966335
+      arrastar-28-28_57: -5047778584670804639
+      arrastar-28-28_58: 3391596551367811341
+      arrastar-28-28_59: 7624937831645674715
+      arrastar-28-28_6: 7882700616791963221
+      arrastar-28-28_60: -3355272897035466017
+      arrastar-28-28_61: 7418872178660995970
+      arrastar-28-28_62: -2468357215800388434
+      arrastar-28-28_63: 621795429840082286
+      arrastar-28-28_64: 686902082170732108
+      arrastar-28-28_65: -1021715091753272345
+      arrastar-28-28_66: 5207624669056812440
+      arrastar-28-28_67: -3535236770066113098
+      arrastar-28-28_68: 4848940860016177405
+      arrastar-28-28_7: -2273772189506427693
+      arrastar-28-28_8: -9124194071435324807
+      arrastar-28-28_9: -2361964186482029621
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -15,7 +15,8 @@ MonoBehaviour:
   npcName: 
   npcPortrait: {fileID: 0}
   dialogueLines:
-  - Pergunta1
+  - "Em \"Memorial do Convento\", o que simboliza a constru\xE7\xE3o do convento
+    de Mafra?"
   - "N\xE3o me parece..."
   - Correto!
   autoProgressionLines: 
@@ -31,7 +32,8 @@ MonoBehaviour:
   choices:
   - dialogueIndex: 0
     choices:
-    - Certa
-    - Errada
-    - Errada
+    - O poder do rei e o sofrimento do povo
+    - "A uni\xE3o entre ci\xEAncia e f\xE9"
+    - A chegada do Iluminismo a Portugal
     nextDialogueIndexes: 020000000100000001000000
+  resetDialogue: 1

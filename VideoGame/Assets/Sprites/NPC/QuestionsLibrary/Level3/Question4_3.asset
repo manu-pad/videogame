@@ -15,7 +15,7 @@ MonoBehaviour:
   npcName: 
   npcPortrait: {fileID: 0}
   dialogueLines:
-  - Pergunta1
+  - "Qual \xE9 o principal tema da obra \u201COs Maias\u201D, de E\xE7a de Queir\xF3s?"
   - "N\xE3o me parece..."
   - Correto!
   autoProgressionLines: 
@@ -31,7 +31,8 @@ MonoBehaviour:
   choices:
   - dialogueIndex: 0
     choices:
-    - Certa
-    - Errada
-    - Errada
+    - "O amor entre irm\xE3os  "
+    - "A cr\xEDtica \xE0 monarquia portuguesa"
+    - "A luta de classes na revolu\xE7\xE3o"
     nextDialogueIndexes: 020000000100000001000000
+  resetDialogue: 1

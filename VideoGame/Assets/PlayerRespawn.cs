@@ -7,7 +7,8 @@ public class PlayerRespawn : MonoBehaviour
     private Flower[] flowers;
     private Bird[] birds;  // Referência às ovelhas
     private NPC[] npcs;
-    private BookInspect2[] books;
+    private BookInspect[] books1;
+    private BookInspect2[] books2;
     private InventoryController inventory;
 
     void Start()
@@ -16,7 +17,8 @@ public class PlayerRespawn : MonoBehaviour
         flowers = FindObjectsOfType<Flower>();
         birds = FindObjectsOfType<Bird>();
         npcs = FindObjectsOfType<NPC>();
-        books = FindObjectsOfType<BookInspect2>();
+        books1 = FindObjectsOfType<BookInspect>();
+        books2 = FindObjectsOfType<BookInspect2>();
         inventory = FindObjectOfType<InventoryController>();
     }
 
@@ -55,22 +57,44 @@ public class PlayerRespawn : MonoBehaviour
         {
             npc.ResetDialogues();
         }
-        foreach (var book in books)
+        foreach (var book2 in books2)
         {
-            book.ResetBook(); 
+            book2.ResetBook(); 
+        }
+        foreach (var book in books1)
+        {
+            book.ResetBook();
         }
 
-        VariableManager.Instance.SetVariable("openGateOne", false);
+        //resetação dos bookinspect1
+
+
+        //VariableManager.Instance.SetVariable("openGateOne", false);
         VariableManager.Instance.SetVariable("openGateTwo", false);
         VariableManager.Instance.SetVariable("openGateThree", false);
         VariableManager.Instance.SetVariable("openGateFour", false);
         VariableManager.Instance.SetVariable("openGateFive", false);
         VariableManager.Instance.SetVariable("openGateSix", false);
         VariableManager.Instance.SetVariable("finalGateOne", false);
+        //level2
+        VariableManager.Instance.SetVariable("birdPosition", false);
+        VariableManager.Instance.SetVariable("openGateTwo2", false);
+        VariableManager.Instance.SetVariable("moveWoodOne2", false);
+        VariableManager.Instance.SetVariable("moveWoodTwo2", false);
+        VariableManager.Instance.SetVariable("moveWoodThree2", false);
+        VariableManager.Instance.SetVariable("fimErro", false);
+        VariableManager.Instance.SetVariable("fimAcerto", false);
+        //level3
+        //VariableManager.Instance.SetVariable("openGateOne3", false);
+        VariableManager.Instance.SetVariable("moveWoodTwo3", false);
+        VariableManager.Instance.SetVariable("moveWoodThree3", false);
+        VariableManager.Instance.SetVariable("moveWoodFour3", false);
+        VariableManager.Instance.SetVariable("openGateTwo3", false);
+        VariableManager.Instance.SetVariable("openGateThree3", false);
+        VariableManager.Instance.SetVariable("openGateFour3", false);
 
         FindObjectOfType<WorldActionsController>()?.ResetGates();
 
-        //resetação dos bookinspect1
         //resetar textos lidos
         InspectionManager.Instance?.ResetReadTexts();
         //resetar o UI

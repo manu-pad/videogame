@@ -15,7 +15,8 @@ MonoBehaviour:
   npcName: 
   npcPortrait: {fileID: 0}
   dialogueLines:
-  - Pergunta1
+  - "Quem \xE9 considerado o mestre dos heter\xF4nimos de Fernando Pessoa, segundo
+    o pr\xF3prio autor?"
   - "N\xE3o me parece..."
   - Correto!
   autoProgressionLines: 
@@ -31,7 +32,8 @@ MonoBehaviour:
   choices:
   - dialogueIndex: 0
     choices:
-    - Certa
-    - Errada
-    - Errada
-    nextDialogueIndexes: 020000000100000001000000
+    - Ricardo Reis
+    - "\xC1lvaro de Campos"
+    - Alberto Caeiro
+    nextDialogueIndexes: 010000000100000002000000
+  resetDialogue: 1

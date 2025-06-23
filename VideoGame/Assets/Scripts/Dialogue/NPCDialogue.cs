@@ -24,6 +24,14 @@ public class NPCDialogue : ScriptableObject
 }
 
 [System.Serializable]
+public class DialogueFlag
+{
+    public int dialogueLineIndex;
+    public string variableName;
+    public bool value = true;
+}
+
+[System.Serializable]
 public class DialogueChoice
 {
     public int dialogueIndex;
@@ -31,11 +39,5 @@ public class DialogueChoice
     public int[] nextDialogueIndexes;
 }
 
-[System.Serializable]
-public class DialogueFlag
-{
-    public int dialogueLineIndex;
-    public string variableName;
-    public bool value = true;
-}
+
 

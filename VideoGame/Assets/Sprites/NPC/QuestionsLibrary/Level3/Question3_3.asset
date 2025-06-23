@@ -15,7 +15,8 @@ MonoBehaviour:
   npcName: 
   npcPortrait: {fileID: 0}
   dialogueLines:
-  - Pergunta1
+  - "Qual \xE9 o heter\xF4nimo de Fernando Pessoa que representa a raz\xE3o e o senso
+    cl\xE1ssico?"
   - "N\xE3o me parece..."
   - Correto!
   autoProgressionLines: 
@@ -31,7 +32,8 @@ MonoBehaviour:
   choices:
   - dialogueIndex: 0
     choices:
-    - Certa
-    - Errada
-    - Errada
+    - Ricardo Reis
+    - "\xC1lvaro de Campos"
+    - Alberto Caeiro
     nextDialogueIndexes: 020000000100000001000000
+  resetDialogue: 1

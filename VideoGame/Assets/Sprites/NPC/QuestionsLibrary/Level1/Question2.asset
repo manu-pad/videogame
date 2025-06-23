@@ -20,13 +20,11 @@ MonoBehaviour:
   - "N\xE3o me parece isso.. Tente novamente."
   - "Resposta correta. Poder\xE1 prosseguir."
   autoProgressionLines: 
-  endDialogueLines: 000001
+  endDialogueLines: 000101
   autoProgressionDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 0}
   voicePitch: 1
-  isRepeatable: 1
-  completionVariableName: 
   lineFlags:
   - dialogueLineIndex: 2
     variableName: openGateTwo
@@ -38,3 +36,4 @@ MonoBehaviour:
     - O Cabo das Tormentas
     - O Mar Vermelho
     nextDialogueIndexes: 010000000200000001000000
+  resetDialogue: 1

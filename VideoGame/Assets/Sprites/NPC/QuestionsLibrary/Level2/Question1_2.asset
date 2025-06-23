@@ -15,7 +15,8 @@ MonoBehaviour:
   npcName: 
   npcPortrait: {fileID: 0}
   dialogueLines:
-  - "Qual \xE9 o objetivo da viagem de Vasco da Gama em \"Os Lus\xEDadas\"??"
+  - "O que caracteriza o estilo de escrita de E\xE7a de Queir\xF3s em obras como
+    \u201CO Primo Bas\xEDlio\u201D?"
   - "N\xE3o me parece..."
   - Correto!
   autoProgressionLines: 
@@ -31,8 +32,8 @@ MonoBehaviour:
   choices:
   - dialogueIndex: 0
     choices:
-    - Abrir rotas comerciais
-    - "Colonizar a \xCDndia"
-    - Encontrar ouro
-    nextDialogueIndexes: 020000000100000001000000
+    - "Linguagem rebuscada e simb\xF3lica"
+    - "Narrativa em versos \xE9picos"
+    - "Realismo cr\xEDtico e ironia social"
+    nextDialogueIndexes: 010000000100000002000000
   resetDialogue: 1

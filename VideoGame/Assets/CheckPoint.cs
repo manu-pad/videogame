@@ -2,24 +2,31 @@ using UnityEngine;
 
 public class Checkpoint : MonoBehaviour
 {
-    public static Vector2 lastCheckpointPosition; // Última posição de checkpoint ativado
+    public static Vector2 lastCheckpointPosition;
 
-    private void Start()
-    {
-        // Se este for o primeiro checkpoint a ser ativado no jogo, salva sua posição inicial
-        if (lastCheckpointPosition == Vector2.zero)
-        {
-            lastCheckpointPosition = transform.position;
-            Debug.Log("Checkpoint inicial: " + lastCheckpointPosition);
-        }
-    }
+    [Header("Image to show when this checkpoint is activated")]
+    public GameObject imageToActivate;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            lastCheckpointPosition = transform.position;
-            Debug.Log("Novo checkpoint ativado em: " + lastCheckpointPosition);
+            if (lastCheckpointPosition != (Vector2)transform.position)
+            {
+                lastCheckpointPosition = transform.position;
+                Debug.Log("New checkpoint activated at: " + lastCheckpointPosition);
+
+                if (imageToActivate != null)
+                {
+                    imageToActivate.SetActive(true);
+                }
+            }
+
+            PlayerHealth health = other.GetComponent<PlayerHealth>();
+            if (health != null)
+            {
+                health.RestoreFullHealth();
+            }
         }
     }
 }
