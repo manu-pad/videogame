@@ -22,7 +22,7 @@ MonoBehaviour:
     restaurar os livros no mundo. "
   - 'Mas cuidado! Inimigos tentam impedir o teu progresso.  '
   - "Est\xE1s no meu santu\xE1rio agora.\\nPara sair, deves recolher as minhas anota\xE7\xF5es
-    espalhadas.\\nCom elas, resolver\xE1s a charada final. "
+    espalhadas.\\nCom elas, resolver\xE1s o enigma final."
   - "Confie em mim. Juntos, traremos as hist\xF3rias de volta.\\nVai, e toma cuidado."
   autoProgressionLines: 0100
   endDialogueLines: 000000000001

@@ -104,6 +104,7 @@ public class NPC : MonoBehaviour, IInteractable
         }
     }
 
+
     IEnumerator TypeLine()
     {
         isTyping = true;
@@ -151,13 +152,14 @@ public class NPC : MonoBehaviour, IInteractable
             {
                 if (flag.dialogueLineIndex == dialogueIndex && !string.IsNullOrEmpty(flag.variableName))
                 {
+                    //ativa a variável
                     VariableManager.Instance.SetVariable(flag.variableName, flag.value);
                     Debug.Log($"Flag '{flag.variableName}' ativada na linha {dialogueIndex}.");
                     finalDialogueEnd = true;
                 }
             }
         }
-
+        //caso nao tenha variável, começa a digitar
         StartCoroutine(TypeLine());
     }
 
